@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title> Parish Associations </title>
+    <link rel = "stylesheet" href = "associations-page-style.css">
+    <link href = "https://unpkg.com/aos@2.3.4/dist/aos.css" rel = "stylesheet">
+</head>
+
+<body>
+
+    <header class = "header">
+        <nav class = "navbar">
+            <a href = "#" class = "nav-logo"> St. Mary's Church, Dehiwala </a>
+            <ul class="nav-menu">
+                <li class = "nav-item"><a href = "index.html" class = "nav-link"> Home </a></li>
+                <div class = "dropdown"> 
+                    <li class = "nav-item"><a href = "about-page.html" class = "nav-link"> About Us </a></li>
+                    <div class = "dropdown-content">
+                        <a href = "index.html"> Associations </a>
+                    </div>
+                </div>
+                <li class = "nav-item"><a href = "reflections-page.html" class = "nav-link"> Reflections </a></li>
+                <li class = "nav-item"><a href = "events-page.html" class = "nav-link"> Events </a></li>
+                <li class = "nav-item"><a href = "announcements-page.html" class = "nav-link"> News Corner </a></li>
+                <li class = "nav-item"><a href = "#contact" class = "nav-link"> Gallery </a></li>
+                <li class = "nav-item"><a href = "history-page.html" class = "nav-link"> Church History </a></li>
+            </ul>
+            <button class = "nav-button"> Contact Us </button>
+        </nav>
+    </header>
+
+    <section class = "hero-banner">
+        <div class = "hero-content">
+            <h1> Parish Associations </h1>
+            <p> Get to know more about the associations in your church.
+            </p>
+            <div class = "cta-buttons">
+                <a href = "crv-config.html" class = "btn primary"> Learn More </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="associations" class="associations">
+    <div class="associations-container">
+
+      <div class="grid">
+      <div class="card" data-aos = "zoom-in">
+        <h2> Parish Pastoral Council</h2>
+        <h3> Maybe moto or purpose </h3>
+        <p> Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+        </p>
+      </div>
+
+      <div class="card" data-aos = "fade-left">
+        <h2> Liturgy Commitee </h2>
+        <h3> Maybe moto or purpose </h3>
+        <p> Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+        </p>
+      </div>
+
+      <div class="card" data-aos = "fade-left">
+        <h2> Altar Servers Association </h2>
+        <p> Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+        </p>
+      </div>
+
+      <div class="card" data-aos = "fade-left">
+        <h2> Human Development Society </h2>
+        <p> Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+            Some information about the association. Some information about the association.
+        </p>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class = "footer">
+
+        <div class = "footer-container">
+            <div class = "footer-logo">
+                <h3> St. Mary's Church, Dehiwala </h3>
+                <p>  </p>
+            </div>
+            
+            <div class = "footer-contact">
+              <h3> Contact Us </h3>
+              <p> Church Address</p>
+              <p> Email: <a href="mailto:hello@bytesurge.com">hello@bytesurge.com</a></p>
+              <p> Locations: Netherlands & Sri Lanka</p>
+            </div>
+
+            <div class = "footer-social">
+                <a href = "#"><img src = "images/facebook.png" alt ="Facebook"></a>
+                <a href = "#"><img src = "images/x.png" alt ="Twitter"></a>
+                <a href = "#"><img src = "images/instagram.png" alt ="Instagram"></a>
+                <a href = "#"><img src = "images/youtube.png" alt ="TouTube"></a>
+            </div>
+        </div>
+
+        <div class = "footer-bottom">
+            <p> &copy; 2025 ByteSurge. All rights reserved. </p>
+        </div>
+  </footer>
+
+  <script src = "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    duration: 800,     // Animation duration in ms
+    once: false,        // Only animate elements once
+    offset: 100,       // Distance in px to trigger animation
+    easing: 'ease-in-out',
+  });
+  </script>
+
+  <script>
+  window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
+
+</body>
+</html>

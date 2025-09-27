@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title> Parish Announcememnts </title>
+    <link rel = "stylesheet" href = "announcements-page-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href = "https://unpkg.com/aos@2.3.4/dist/aos.css" rel = "stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+
+    <header class = "header">
+        <nav class = "navbar">
+            <a href = "#" class = "nav-logo"> St. Mary's Church, Dehiwala </a>
+            <ul class="nav-menu">
+                <li class = "nav-item"><a href = "index.html" class = "nav-link"> Home </a></li>
+                <div class = "dropdown"> 
+                    <li class = "nav-item"><a href = "about-page.html" class = "nav-link"> About Us </a></li>
+                    <div class = "dropdown-content">
+                        <a href = "index.html"> Associations </a>
+                    </div>
+                </div>
+                <li class = "nav-item"><a href = "reflections-page.html" class = "nav-link"> Reflections </a></li>
+                <li class = "nav-item"><a href = "events-page.html" class = "nav-link"> Events </a></li>
+                <li class = "nav-item"><a href = "announcements-page.html" class = "nav-link"> News Corner </a></li>
+                <li class = "nav-item"><a href = "gallery-page.html" class = "nav-link"> Gallery </a></li>
+                <li class = "nav-item"><a href = "history-page.html" class = "nav-link"> Church History </a></li>
+            </ul>
+            <button class = "nav-button"> Contact Us </button>
+        </nav>
+    </header>
+
+    <section class = "hero-banner">
+        <div class = "hero-content">
+            <h1> Parish Announcememnts </h1>
+    </section>
+
+    <!-- Top Buttons -->
+
+  <div class = "top-buttons">
+    <button class = "btn btn-primary"> Download This Week's Bulletin </button>
+    <button class = "btn btn-outline"> View Church Calendar </button>
+    <button class = "btn btn-outline"> Join Community Forum </button>
+  </div>
+
+  <!-- Main Content -->
+
+  <h2> This Week's Bulletin </h2>
+
+  <div class = "container">
+    <div class = "left-section">
+         <h2> This Week's Bulletin </h2>
+
+    <!-- Bulletin Section -->
+
+    <div class = "card">
+      <h3> Sunday Service - January 21st </h3>
+      <p><strong> Service Order: </strong></p>
+      <ul>
+        <li> Opening Hymn: 'How Great Thou Art' </li>
+        <li> Scripture Reading: Philippians 4:4–9 </li>
+        <li> Sermon: 'Finding Peace in God's Presence' </li>
+        <li> Special Music: Church Choir </li>
+        <li> Closing Prayer & Benediction </li>
+      </ul>
+      <p><strong> Announcements: </strong></p>
+      <ul>
+        <li> Communion will be served during morning service </li>
+        <li> New member orientation after service </li>
+        <li> Youth group meeting cancelled this week </li>
+      </ul>
+    </div>
+    </div>
+
+    <!-- Events Section -->
+
+    <div class = "card2">
+      <h2> Upcoming Events </h2>
+
+      <div class = "event">
+        <h3> Annual Church Retreat </h3>
+        <p><em> March 15–17, 2025 </em></p>
+        <p> Join us for a weekend of fellowship, worship, and spiritual renewal at Camp Wildwood. </p>
+        <a href = "#"> Registration opens February 1st </a>
+      </div>
+
+      <div class = "event">
+        <h3> Easter Celebration Planning </h3>
+        <p><em> April 9, 2025 </em></p>
+        <p> We're planning special Easter services and community events. Volunteers needed! </p>
+        <a href = "#"> Sign up in the fellowship hall </a>
+      </div>
+
+      <div class = "event">
+        <h3> New Member Classes </h3>
+        <p><em> Starting February 4, 2025 </em></p>
+        <p> Four-week series exploring church membership and Christian discipleship </p>
+        <a href = "#">Contact the church office to register </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class = "footer">
+
+        <div class = "footer-container">
+            <div class = "footer-logo">
+                <h3> St. Mary's Church, Dehiwala </h3>
+                <p>  </p>
+            </div>
+            
+            <div class = "footer-contact">
+              <h3> Contact Us </h3>
+              <p> Church Address</p>
+              <p> Email: <a href="mailto:hello@bytesurge.com">hello@bytesurge.com</a></p>
+              <p> Locations: Netherlands & Sri Lanka</p>
+            </div>
+
+            <div class = "footer-social">
+                <a href = "#"><img src = "images/facebook.png" alt ="Facebook"></a>
+                <a href = "#"><img src = "images/x.png" alt ="Twitter"></a>
+                <a href = "#"><img src = "images/instagram.png" alt ="Instagram"></a>
+                <a href = "#"><img src = "images/youtube.png" alt ="TouTube"></a>
+            </div>
+        </div>
+
+        <div class = "footer-bottom">
+            <p> &copy; 2025 ByteSurge. All rights reserved. </p>
+        </div>
+  </footer>
+
+  <script src = "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    duration: 800,     // Animation duration in ms
+    once: false,        // Only animate elements once
+    offset: 100,       // Distance in px to trigger animation
+    easing: 'ease-in-out',
+  });
+  </script>
+
+  <script>
+  window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
+
+</body>
+</html>
+
