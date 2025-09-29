@@ -114,6 +114,20 @@ header.scrolled a{
     background-color: #d18a5b;
 }
 
+.btn.primary2 {
+  background-color: var(--accent-color);
+  color: rgb(230, 222, 222);
+  border-radius: 10px 20px 10px 20px;
+  padding: 12px 24px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn.primary2:hover {
+  background-color: #5d5a5a;
+}
+
+
 .hero-banner {
   /*background: url('images/logo.jpg') no-repeat center center/cover;*/
   background-color: #1797f2;
@@ -161,7 +175,6 @@ header.scrolled a{
     margin-bottom: 20px;
     align-items: center;
     justify-content: center;
-    background-color: #555;
 }
 
 .btn {
@@ -187,8 +200,8 @@ header.scrolled a{
    display: flex;
    gap: 20px;
    align-items: first baseline;
-   border: solid black;
    padding: 60px;
+   color: var(--text-color2);
 }
 
 .left-section {
@@ -205,7 +218,6 @@ header.scrolled a{
    padding: 20px;
    border-radius: 8px;
    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-   border: solid red;
    flex: 2;
 }
 
@@ -215,7 +227,6 @@ header.scrolled a{
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     flex: 1;
-    border: solid rgb(51, 0, 255);
     width: 60px;
     flex: 1;
     }

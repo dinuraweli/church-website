@@ -114,6 +114,22 @@ header.scrolled a{
     background-color: #d18a5b;
 }
 
+.btn.primary2 {
+  background-color: var(--accent-color);
+  color: rgb(230, 222, 222);
+  border-radius: 10px 20px 10px 20px;
+}
+
+.btn.primary2:hover {
+  background-color: #5d5a5a;
+}
+
+.btn {
+  padding: 12px 24px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
 /* Hero Section */
 
   .hero-banner {
@@ -490,7 +506,7 @@ section p {
 
 .footer-logo {
   flex: 1 1 250px;
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0);
   border-style: dotted;
 }
 
