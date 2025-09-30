@@ -114,6 +114,20 @@ header.scrolled a{
     background-color: #d18a5b;
 }
 
+.btn.primary2 {
+  background-color: var(--accent-color);
+  color: rgb(230, 222, 222);
+  border-radius: 10px 20px 10px 20px;
+  padding: 12px 24px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn.primary2:hover {
+  background-color: #5d5a5a;
+}
+
+
 .hero-banner {
   /*background: url('images/logo.jpg') no-repeat center center/cover;*/
   background-color: #1797f2;
