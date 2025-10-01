@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> St. Mary's Church, Dehiwala </title>
     <link rel = "stylesheet" href = "style.css">
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href = "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel = "stylesheet">
+    <link href = "https://unpkg.com/aos@2.3.4/dist/aos.css" rel = "stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>
-
+<!-- Original Header code
     <header class = "header">
         <nav class = "navbar">
             <a href = "#" class = "nav-logo"> St. Mary's Church, Dehiwala </a>
+           <div class = "menu-toggle" id = "menu-toggle"> &#9776; </div>
             <ul class="nav-menu">
                 <li class = "nav-item"><a href = "index.html" class = "nav-link"> Home </a></li>
                 <div class = "dropdown"> 
@@ -26,10 +29,33 @@
                 <li class = "nav-item"><a href = "announcements-page.html" class = "nav-link"> News Corner </a></li>
                 <li class = "nav-item"><a href = "#contact" class = "nav-link"> Gallery </a></li>
                 <li class = "nav-item"><a href = "history-page.html" class = "nav-link"> Church History </a></li>
+                <li class = "nav-item"><a href = "contactus-page.html" class = "btn primary2"> Contact Us </a></li>
             </ul>
-            <a href = "contactus-page.html" class = "btn primary2"> Contact Us </a> 
         </nav>
     </header>
+-->
+
+<header>
+    <div class = "logo"> <a href = "index.html">
+          <img src = "images/Dehiwala Church.png" alt = "Church Logo" class = "logo">
+      </a> 
+    </div>
+        <div class = "menu-toggle" id = "menu-toggle"> &#9776; </div>
+        <nav id = "navMenu">
+            <ul>
+                <li><a href = "index.html"> Home </a></li>
+                <li><a href = "about-page.html"> About Us </a></li>
+                <li><a href = "associations-page.html"> Associations </a></li>
+                <li><a href = "reflections-page.html" class = "nav-link"> Reflections </a></li>
+                <li><a href = "events-page.html" class = "nav-link"> Events </a></li>
+                <li><a href = "announcements-page.html" class = "nav-link"> News Corner </a></li>
+                <li><a href = "#contact" class = "nav-link"> Gallery </a></li>
+                <li class = "nav-item"><a href = "history-page.html" class = "nav-link"> Church History </a></li>
+                <li><a href = "contact.html" class = "btn-outline" id = "openTestDrive"> Conatct Us </a></li>
+            </ul>
+        </nav>
+</header>
+
 
     <section class = "hero-banner">
         <div class = "hero-content">
@@ -140,6 +166,14 @@
   });
 </script>
 
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('navMenu');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+</script>
 
 </body>
 
