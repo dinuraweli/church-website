@@ -54,9 +54,12 @@ header.scrolled a{
   color: rgb(15, 123, 145);
 }
 
-.logo {
-  height: 40px;
-  width: auto;
+.logo a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 20px;
 }
 
 nav ul {

@@ -12,26 +12,25 @@
 
 <body>
 
-    <header class = "header">
-        <nav class = "navbar">
-            <a href = "#" class = "nav-logo"> St. Mary's Church, Dehiwala </a>
-            <ul class="nav-menu">
-                <li class = "nav-item"><a href = "index.html" class = "nav-link"> Home </a></li>
-                <div class = "dropdown"> 
-                    <li class = "nav-item"><a href = "about-page.html" class = "nav-link"> About Us </a></li>
-                    <div class = "dropdown-content">
-                        <a href = "index.html"> Associations </a>
-                    </div>
-                </div>
-                <li class = "nav-item"><a href = "reflections-page.html" class = "nav-link"> Reflections </a></li>
-                <li class = "nav-item"><a href = "events-page.html" class = "nav-link"> Schedules </a></li>
-                <li class = "nav-item"><a href = "announcements-page.html" class = "nav-link"> News Corner </a></li>
-                <li class = "nav-item"><a href = "#contact" class = "nav-link"> Gallery </a></li>
-                <li class = "nav-item"><a href = "history-page.html" class = "nav-link"> Church History </a></li>
+<header>
+    <div class = "logo"> <a href = "index.html" class = "logo"> St Mary's Church, Dehiwala
+      </a> 
+    </div>
+        <div class = "menu-toggle" id = "menu-toggle"> &#9776; </div>
+        <nav id = "navMenu">
+            <ul>
+                <li><a href = "index.html"> Home </a></li>
+                <li><a href = "about-page.html"> About Us </a></li>
+                <li><a href = "associations-page.html"> Associations </a></li>
+                <li><a href = "reflections-page.html" class = "nav-link"> Reflections </a></li>
+                <li><a href = "events-page.html" class = "nav-link"> Events </a></li>
+                <li><a href = "announcements-page.html" class = "nav-link"> News Corner </a></li>
+                <li><a href = "gallery-page.html" class = "nav-link"> Gallery </a></li>
+                <li><a href = "history-page.html" class = "nav-link"> Church History </a></li>
+                <li><a href = "contactus-page.html" class = "btn-outline" id = "openTestDrive"> Conatct Us </a></li>
             </ul>
-            <a href = "contactus-page.html" class = "btn primary2"> Contact Us </a> 
         </nav>
-    </header>
+</header>
 
     <section class = "hero-banner">
         <div class = "hero-content">
@@ -177,6 +176,15 @@
     } else {
       header.classList.remove("scrolled");
     }
+  });
+</script>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('navMenu');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
   });
 </script>
 
