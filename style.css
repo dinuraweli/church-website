@@ -360,6 +360,11 @@ nav a {
   background-color: #1797f200;
 }
 
+.footer-logo img {
+  width: 60px;
+  height: auto;
+}
+
 .footer-logo {
   flex: 1 1 250px;
   border-color: #19d53500;
@@ -371,6 +376,7 @@ nav a {
   margin-bottom: 10px;
   border-color: #f63ba200;
   border-style: dotted;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .footer-contact{
