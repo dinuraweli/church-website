@@ -6,7 +6,7 @@
 
 :root{
   --main-border: solid rgba(255, 0, 0, 0);
-  --accent-color: red;
+  --accent-color: rgb(0, 102, 176);
   --bg-colour: #efe2b400;
   --bg-colour2: floralwhite;
   --sectionbg: #f9f9f9;
