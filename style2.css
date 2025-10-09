@@ -1,0 +1,316 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-border: solid rgba(255, 0, 0, 0);
+  --accent-color: rgb(0, 102, 176);
+  --bg-colour: #efe2b400;
+  --bg-colour2: floralwhite;
+  --sectionbg: #f9f9f9;
+  --text-color: floralwhite;
+  --text-color2: black;
+}
+
+/* Typography */
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color2);
+  background: var(--bg-colour);
+  font-size: clamp(14px, 1.1vw, 16px);
+}
+
+/* ================= HEADER ================= */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header.scrolled .btn-outline {
+  padding: 10px 20px;
+  border: 2px solid rgb(15, 123, 145);
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+header.scrolled a {
+  color: rgb(0, 102, 176);
+}
+
+.logo a {
+  color: floralwhite;
+  text-decoration: none;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
+}
+
+.btn-outline {
+  padding: 10px 20px;
+  border: 2px solid var(--bg-colour2);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+/* ================= HERO ================= */
+.hero-banner {
+  background: url('images/DSC_1271.JPG') no-repeat center center/cover;
+  height: 90vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 9, 9, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn.primary {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #5d5a5a;
+}
+
+.btn.secondary {
+  background-color: white;
+  color: #111;
+}
+
+.btn.secondary:hover {
+  background-color: #ddd;
+}
+
+/* ================= DISCOVER/Stats ================= */
+.stats-grid {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.stats-grid h2 {
+  color: var(--accent-color);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  padding: 2rem 0;
+}
+
+/* ================= FEATURES ================= */
+.features {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.feature-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.feature-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.4s ease;
+}
+
+.feature-image img:hover {
+  transform: scale(1.03);
+}
+
+.feature-text h2 {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.feature-text p {
+  font-size: clamp(0.95rem, 2vw, 1rem);
+  margin-bottom: 20px;
+  color: var(--text-color2);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background-color: #1e293b;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: auto;
+}
+
+.footer-logo h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-contact h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.footer-contact a {
+  color: #1797f2;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+  color: red;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0.8);
+  transition: filter 0.3s;
+}
+
+.footer-social img:hover {
+  filter: brightness(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  color: #666;
+}
+
+/* ================= RESPONSIVE BREAKPOINTS ================= */
+@media (max-width: 1024px) {
+  .feature-row { flex-direction: column; text-align: center; }
+  .hero-banner { height: 75vh; }
+}
+
+@media (max-width: 768px) {
+  header { padding: 0.8rem 1.2rem; }
+  nav ul { flex-direction: column; gap: 10px; }
+  .hero-content h1 { font-size: 2rem; }
+  .hero-content p { font-size: 1rem; }
+  .stats-container { gap: 20px; }
+}
+
+@media (max-width: 576px) {
+  .hero-banner { height: 65vh; padding: 0 10px; }
+  .cta-buttons { flex-direction: column; gap: 10px; }
+  .feature-text h2 { font-size: 1.2rem; }
+  .feature-text p { font-size: 0.9rem; }
+}
+
+/* Orientation fixes */
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero-banner { height: auto; padding: 40px 20px; }
+}

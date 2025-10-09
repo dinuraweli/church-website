@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang= "en">
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <title> Reflections </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> St. Mary's Church, Dehiwala </title>
+    <link rel = "stylesheet" href = "css/base.css">
+    <link rel = "stylesheet" href = "css/layout.css">
     <link rel = "stylesheet" href = "reflections-page-style.css">
-    <link href = "https://unpkg.com/aos@2.3.4/dist/aos.css" rel = "stylesheet">
+    <link rel = "stylesheet" href = "css/responsive.css">
+    <link href = "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel = "stylesheet">
+    <link href = "https://unpkg.com/aos@2.3.4/dist/aos.css" rel = "stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>
@@ -78,6 +83,7 @@
 
         <div class = "footer-container">
             <div class = "footer-logo">
+                <img src = "images/Dehiwala Church.png" alt = "Range">
                 <h3> St. Mary's Church, Dehiwala </h3>
                 <p>  </p>
             </div>
@@ -90,10 +96,10 @@
             </div>
 
             <div class = "footer-social">
-                <a href = "#"><img src = "images/facebook.png" alt ="Facebook"></a>
-                <a href = "#"><img src = "images/x.png" alt ="Twitter"></a>
-                <a href = "#"><img src = "images/instagram.png" alt ="Instagram"></a>
-                <a href = "#"><img src = "images/youtube.png" alt ="TouTube"></a>
+                <a href = "https://web.facebook.com/profile.php?id=100067947835984" target = "_blank" rel = "noopener noreferrer"><img src = "images/facebook.png" alt ="Facebook"></a>
+                <a href = "https://web.facebook.com/profile.php?id=100067947835984" target = "_blank" rel = "noopener noreferrer"><img src = "images/x.png" alt ="Twitter"></a>
+                <a href = "https://web.facebook.com/profile.php?id=100067947835984" target = "_blank" rel = "noopener noreferrer"><img src = "images/instagram.png" alt ="Instagram"></a>
+                <a href = "https://web.facebook.com/profile.php?id=100067947835984" target = "_blank" rel = "noopener noreferrer"><img src = "images/youtube.png" alt ="TouTube"></a>
             </div>
         </div>
 
@@ -103,35 +109,7 @@
   </footer>
 
   <script src = "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-    duration: 800,     // Animation duration in ms
-    once: false,        // Only animate elements once
-    offset: 100,       // Distance in px to trigger animation
-    easing: 'ease-in-out',
-  });
-  </script>
-
-  <script>
-  window.addEventListener("scroll", () => {
-    const header = document.querySelector("header");
-    if (window.scrollY > 50) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  });
-</script>
-
-<script>
-  const toggle = document.getElementById('menu-toggle');
-  const nav = document.getElementById('navMenu');
-
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
-</script>
-
+  <script src = "main.js"> </script>
 
 </body>
 </html>

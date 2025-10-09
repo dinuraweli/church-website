@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  --main-border: solid rgba(255, 0, 0, 0);
+  --accent-color: red;
+  --bg-colour: #efe2b400;
+  --bg-colour2: floralwhite;
+  --sectionbg: #f9f9f9;
+  --text-color: floralwhite;
+  --text-color2: black;
+}
+
+/* Typography */
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color2);
+  background: var(--bg-colour);
+}
+/* Typography
+rgb(0, 102, 176) */

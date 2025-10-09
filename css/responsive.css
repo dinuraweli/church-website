@@ -1,0 +1,100 @@
+/* ================= RESPONSIVE BREAKPOINTS ================= */
+
+@media (max-width: 940px) {
+  .nav { float: none; text-align: center; margin-top: 1rem;}
+  .services .grid {grid-template-columns: 1fr;}
+  .hero h2 {font-size: 2rem;}
+  .hero .btn {width: 100%; max-width: 200px; }
+  .associations .grid { grid-template-columns: 1fr; }
+  /*.logo a {font-size: large; padding-top: 20px;}*/
+  .hero-banner {flex-direction: column; text-align: center;}
+  .nav ul {flex-direction: column; gap: 10px;}
+  .why-items {flex-direction: column;}
+  .hero-content h1 {font-size: 2rem;}
+  .hero-content p {font-size: 1rem;}
+  .message {padding: 3rem 1.5rem;}
+  .message-row { flex-direction: column; gap: 2rem; align-items: center;}
+  .message-image {width: 90%; }
+  .message-text {position: static; width: 100%; max-width: 500px; margin: 0 auto;}
+  .message-text h2 {font-size: 1.4rem;}
+  .message-text p {font-size: 0.9rem;}
+  .btn.secondary2 {padding: 0.5rem 1rem;font-size: 0.9rem;}
+  .footer-container {flex-direction: column; align-items: center; text-align: center;}
+  .footer-logo, .footer-contact, .footer-social {flex: 1 1 100%; margin-bottom: 1.5rem;}
+  .footer-social {justify-content: center;}
+  .history-text1 h1{font-size: 36px;}
+  .history-text1 p {font-size: 18px; line-height: 1.6;}
+}
+
+/* Hamburger Menu Responsive style */
+ 
+ @media (max-width: 940px) {
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: var(--accent-color);
+  }
+
+  /* Navigation menu container */
+  #navMenu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #f9f9fa;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Expanded state when open */
+  #navMenu.open {
+    height: auto; /* allow full height depending on links */
+    padding: 15px 0;
+  }
+
+  /* Target the UL inside the nav */
+  #navMenu ul {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  /* Target each link */
+  #navMenu li {
+    width: 100%;
+  }
+
+  #navMenu a {
+    display: block;
+    padding: 12px 0;
+    color: var(--text-color2);
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  #navMenu a:hover {
+    background: var(--accent-color);
+    color: var(--text-color);
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav { float: none; text-align: center; margin-top: 1rem;}
+  .services .grid {grid-template-columns: 1fr;}
+  .hero h2 {font-size: 2rem;}
+  .hero .btn {width: 100%; max-width: 200px; }
+  #navMenu a {font-size: 10px;}
+}
