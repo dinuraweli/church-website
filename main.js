@@ -19,13 +19,26 @@ window.addEventListener("scroll", () => {
 });
 
 // ✅ Mobile Menu Toggle
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.getElementById("menu-toggle");
-  const nav = document.getElementById("navMenu");
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('navMenu');
 
-  if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("open");
-    });
+// Toggle menu on click
+menuToggle.addEventListener('click', (event) => {
+  event.stopPropagation(); // prevent click bubbling to document
+  navMenu.classList.toggle('open');
+});
+
+// Close when clicking outside
+document.addEventListener('click', (event) => {
+  if (navMenu.classList.contains('open') && !navMenu.contains(event.target) && event.target !== menuToggle) {
+    navMenu.classList.remove('open');
   }
 });
+
+// Optional: Close with Escape key
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && navMenu.classList.contains('open')) {
+    navMenu.classList.remove('open');
+  }
+});
+

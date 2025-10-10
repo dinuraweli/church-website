@@ -110,7 +110,7 @@
 
 .values-grid {
   padding: 60px 20px;
-  background-color: #fff;
+  background-color: var(--sectionbg);
   text-align: center;
 }
 
@@ -144,6 +144,18 @@
   width: 60px;
   height: auto;
   margin-bottom: 1rem;
+}
+
+i {
+  font-size: 50px;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+i:hover {
+  color: #0077b6;
+  transform: scale(1.1);
 }
 
 .values-item h3 {
@@ -247,6 +259,10 @@
 
 /* Associations section */
 
+.associations{
+  background-color: var(--sectionbg);
+}
+
 section h3{
   font-size: 35px;
   color: var(--accent-color);
@@ -274,7 +290,7 @@ section p {
   margin-right: auto;
   background-color: #dc131300;
   border-radius: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.435);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
   padding: 1.5rem;
 }
 

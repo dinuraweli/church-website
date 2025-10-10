@@ -1,6 +1,6 @@
 /* Hewro Section */
 .hero-banner {
-  background: url('images/DSC_1271.JPG') no-repeat center center/cover;
+  background: url('images/DSC_1271.jpeg') no-repeat center center/cover;
   height: 90vh;
   color: white;
   display: flex;
@@ -106,6 +106,18 @@
   width: 60px;
   height: auto;
   margin-bottom: 1rem;
+}
+
+i {
+  font-size: 50px;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+i:hover {
+  color: #0077b6;
+  transform: scale(1.1);
 }
 
 .stat-item h3 {
