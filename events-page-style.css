@@ -159,3 +159,15 @@ transition: ease-out;
   margin-bottom: auto;
 }
 
+i {
+  font-size: 50px;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+i:hover {
+  color: #0077b6;
+  transform: scale(1.1);
+}
+
