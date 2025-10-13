@@ -1,9 +1,12 @@
 backend:
-  name: git-gateway
-  branch: main  # or "master" depending on your repo
-
-media_folder: "images/uploads"    # Where uploaded images go inside your repo
-public_folder: "/images/uploads"  # How they’re referenced in the website
+  name: github
+  repo: dinuraweli/church-website # Example: lehanwelikala/church-website
+  branch: main
+  auth_scope: repo
+  base_url: https://api.netlify.com
+  auth_endpoint: /auth
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "pages"
@@ -14,4 +17,4 @@ collections:
         file: "index.html"
         fields:
           - { label: "Page Title", name: "title", widget: "string" }
-          - { label: "Main Content", name: "body", widget: "markdown" }
+          - { label: "Body", name: "body", widget: "markdown" }
