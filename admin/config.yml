@@ -2,16 +2,114 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: images
+public_folder: /images
 
 collections:
+  - name: "announcements"
+    label: "Announcements"
+    folder: "_announcements"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "announcement"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "events"
+    label: "Events"
+    folder: "_events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "event"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Event Date", name: "event_date", widget: "datetime"}
+      - {label: "Event Time", name: "event_time", widget: "string"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "reflections"
+    label: "Reflections"
+    folder: "_reflections"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "reflection"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Scripture Reference", name: "scripture", widget: "string", required: false}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "pages"
     label: "Pages"
     files:
       - file: "index.html"
-        label: "Homepage"
-        name: "homepage"
+        label: "Home Page"
+        name: "home"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - {label: "Title", name: "title", widget: "string", default: "St. Mary's Church, Dehiwala"}
+          - {label: "Welcome Message", name: "welcome_message", widget: "markdown"}
+          - {label: "Service Times", name: "service_times", widget: "markdown"}
+          - {label: "Contact Information", name: "contact_info", widget: "markdown"}
+
+      - file: "about-page.html"
+        label: "About Page"
+        name: "about"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "About Content", name: "about_content", widget: "markdown"}
+          - {label: "Mission Statement", name: "mission", widget: "markdown"}
+          - {label: "Vision Statement", name: "vision", widget: "markdown"}
+
+      - file: "history-page.html"
+        label: "Church History"
+        name: "history"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "History Content", name: "history_content", widget: "markdown"}
+          - {label: "Timeline", name: "timeline", widget: "list", fields: [
+              {label: "Year", name: "year", widget: "string"},
+              {label: "Event", name: "event", widget: "text"}
+            ]}
+
+      - file: "contactus-page.html"
+        label: "Contact Us"
+        name: "contact"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Address", name: "address", widget: "text"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Map Embed Code", name: "map_embed", widget: "text", required: false}
+          - {label: "Contact Form Message", name: "form_message", widget: "text"}
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "_data/navigation.yml"
+        label: "Navigation"
+        name: "navigation"
+        fields:
+          - {label: "Main Menu", name: "main_menu", widget: "list", fields: [
+              {label: "Title", name: "title", widget: "string"},
+              {label: "URL", name: "url", widget: "string"}
+            ]}
+          - {label: "Footer Menu", name: "footer_menu", widget: "list", fields: [
+              {label: "Title", name: "title", widget: "string"},
+              {label: "URL", name: "url", widget: "string"}
+            ]}
+
+      - file: "_data/social.yml"
+        label: "Social Media"
+        name: "social"
+        fields:
+          - {label: "Facebook URL", name: "facebook", widget: "string", required: false}
+          - {label: "Instagram URL", name: "instagram", widget: "string", required: false}
+          - {label: "YouTube URL", name: "youtube", widget: "string", required: false}
+          - {label: "Twitter/X URL", name: "twitter", widget: "string", required: false}
