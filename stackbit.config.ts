@@ -16,6 +16,6 @@ export default defineStackbitConfig({
           urlPath: "/",
         },
       ],
-    },
+    } as any,
   ],
 });
