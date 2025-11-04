@@ -178,6 +178,6 @@ nav a {
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
-  border-top: solid var(--accent-color);
+  /*border-top: solid var(--accent-color);*/
   color: #666;
 }
