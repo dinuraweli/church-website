@@ -16,10 +16,12 @@
 
 /* Typography */
 body {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   color: var(--text-color2);
   background: var(--bg-colour);
 }
 /* Typography
 rgb(0, 102, 176) */
+
+
