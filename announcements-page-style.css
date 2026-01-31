@@ -1,7 +1,16 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--nav-hero-gradient);
+}
+
+/* Hero Section */
+
 .hero-banner {
   /*background: url('images/logo.jpg') no-repeat center center/cover;*/
-  background-color: var(--accent-color);
-  height: 80vh;
+  background: var(--nav-hero-gradient);
+  height: 30vh;
   color: white;
   display: flex;
   align-items: center;
@@ -9,13 +18,16 @@
   text-align: center;
   position: relative;
   padding: 0 20px;
+  /*background: linear-gradient(135deg, #4b0082, #5c5cff);
+  background-image: url('assets/abstract-tech-bg.svg'); /* or PNG
+  background-size: cover;
+  background-position: center;*/
 }
 
 .hero-banner::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.916), rgba(0, 0, 0, 0.432))
 }
 
 .hero-content {
@@ -53,88 +65,262 @@
     border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
+    background-color: bisque;
     }
 
-.btn-primary {
-    background-color: var(--accent-color);
-    color: white;
+.view-content {
+  display: none;
 }
 
-.btn-outline {
-    background-color: white;
-    border: 1px solid #ccc;
+.view-content.active {
+  display: block;
 }
 
-    /* Layout */
-.container {
-   display: flex;
-   gap: 20px;
-   align-items: first baseline;
-   padding: 60px;
-   color: var(--text-color2);
+.tab-btn.active {
+  background-color: var(--accent-color);
+  color: white;
 }
 
-.left-section {
-  flex: 2; /* wider than right */
-}
 
-.left-section h2 {
-  margin: 0 0 12px 0; /* spacing below heading */
-  font-size: 22px;
-}
-
-.card {
-   background: white;
-   padding: 20px;
-   border-radius: 8px;
-   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-   flex: 2;
-}
-
-.card2 {
-    background: white;
+/* Tempoary 
+  
+.view-tabs {
+    background: grey;
+    border-radius: 20px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    flex: 1;
-    width: 60px;
-    flex: 1;
-    }
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
 
-.card h2 {
-    margin-top: 0;
-    font-size: 22px;
+.tab-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tab-btn.active {
+    background: white;
+    color: red;
+}
+
+.tab-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: cyan;
+    color: #374151;
+}*/
+
+/* Calendar */
+
+.view-content {
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background: 
+    linear-gradient(
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 255, 255, 0.88)
+    ),
+    url('IMG_0518.jpg') center / cover no-repeat fixed;
+    padding: 40px 30px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 30px;
+  border: var(--main-border)
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #444;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+  border: var(--main-border2)
+}
+
+.day {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 12px;
+  min-height: 90px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.day:hover {
+  transform: translateY(-2px);
+}
+
+.day {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.day.expanded {
+  background-color: #c7e3ed; /* blue highlight */
+}
+
+.day.christmas {
+  background-color: #f2cfe0; /* pink highlight */
+}
+
+.day.empty {
+  background: transparent;
+  box-shadow: none;
+  cursor: default;
+}
+
+.date {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #333;
 }
 
 .event {
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  background: #b4c9ee;
+}
+
+.event-details {
+  font-size: 12px;
+  margin-top: 6px;
+  color: #444;
+  line-height: 1.4;
+}
+
+.side-panel {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.side-panel h3 {
+  margin-top: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 22px;
+}
+
+.side-panel h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.side-panel p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo2 {
+  width: 60px;
+  height: auto;
+  margin: auto;
+}
+
+.logo2 img {
+  width: 60px;
+}
+
+.event-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  align-items: flex-end;
+  z-index: 1000;
+}
+
+.event-modal-content {
+  background: #ffffff;
+  width: 100%;
+  max-height: 75%;
+  border-radius: 20px 20px 0 0;
+  padding: 20px;
+  overflow-y: auto;
+  animation: slideUp 0.25s ease;
+}
+
+.day.today {
+  border: 2px solid #0b5fa5;
+  background: #eef6ff;
+}
+
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+
+@media (max-width: 600px) {
+  .calendar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .day-name {
+    display: none;
+  }
+  .weekdays{
+    color: #33333300;
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.content-section {
+    padding: 60px 0;
+    background-color: var(--sectionbg);
+}
+
+.content-section h2 {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin: 40px 0 20px;
+}
+
+.content-section h3 {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin: 30px 0 15px;
+}
+
+.content-section p {
+    color: var(--text-light);
     margin-bottom: 15px;
-    padding-left: 10px;
-    border-left: 3px solid var(--accent-color);
+    line-height: 1.8;
 }
 
-.event h3 {
-    margin: 0;
-    font-size: 16px;
-    color: var(--accent-color);
+.content-section ul, .content-section ol {
+    margin: 15px 0 15px 30px;
+    color: var(--text-light);
 }
 
-.event p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #555;
+.content-section li {
+    margin: 8px 0;
+    line-height: 1.6;
 }
 
-.event a {
-    font-size: 14px;
-    color: var(--accent-color);
-    text-decoration: none;
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-
-.event a:hover {
-    text-decoration: underline;
-}
-
-h2{
-    padding: 20px;
-}
-  

@@ -6,7 +6,7 @@
     <title> St. Mary's Church, Dehiwala </title>
     <link rel = "stylesheet" href = "css/base.css">
     <link rel = "stylesheet" href = "css/layout.css">
-    <link rel = "stylesheet" href = "gallery-page-style.css">
+    <link rel = "stylesheet" href = "sipsevan-style.css">
     <link rel = "stylesheet" href = "css/responsive.css">
     <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
     <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
@@ -15,8 +15,6 @@
     <link rel = "stylesheet" href = "https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
 </head>
-
-<body>
 
 <header>
     <div class = "logo"> <a href = "index.html" class = "logo"> St Mary's Church, Dehiwala
@@ -29,13 +27,21 @@
                 <li class = "dropdown"> 
                     <a href = "about-page.html" class = "dropbtn"> About Us </a>
                     <div class = "dropdown-content">
-                        <a href = "nedimala.html"> Infant Jesus Church </a>
+                        <a href = "#"> Infant Jesus Church </a>
                         <a href = "sunday-school.html"> Sunday School </a>
-                        <a href = "sipsevan.html"> Sip Sevana </a>
+                        <a href = "#"> Sip Sevana </a>
                     </div>
                 </li>
-                <li><a href = "sacrements.html" class = "nav-link"> Sacrements </a></li>
-                <li><a href = "associations-page.html" class = "nav-link"> Associations </a></li>
+                <li><a href = "events-page.html" class = "nav-link"> Sacrements </a></li>
+                <li class = "dropdown">
+                    <a href = "associations-page.html" class = "dropbtn"> Associations </a>
+                    <div class = "dropdown-content">
+                        <a href = "#"> Choir </a>
+                        <a href = "#"> Youth </a>
+                        <a href = "#"> YCS </a>
+                        <a href = "#"> Sunday Schools </a>
+                    </div>
+                </li>
                 <!--<li><a href = "reflections-page.html" class = "nav-link"> Reflections </a></li>-->
                 <li><a href = "events-page.html" class = "nav-link"> Events </a></li>
                 <li><a href = "announcements-page.html" class = "nav-link"> Announcements </a></li>
@@ -46,58 +52,36 @@
         </nav>
 </header>
 
-    <section class = "hero-banner">
-        <div class = "hero-content">
-            <h1> Church Gallery </h1>
-    </section>
+<body>
+    <!-- Sunday School Section -->
+    <section class="content-section" id="sunday-school" style="background-color: var(--secondary-color);">
+        <div class="container2">
+            <h2>Sunday School</h2>
+            <p>Our Sunday School is a vital part of our parish's mission to nurture the faith of our youngest members. We provide a loving and engaging environment where children can learn about God's love, the teachings of Jesus, and the rich traditions of the Catholic faith.</p>
 
-    <!--<section class = "gallery-section">
-        <h2 data-aos = "fade-down"> Images </h2>
-        <p class = "gallery-subtext" data-aos = "fade-up"> Stay connected with all our upcoming events, services and parish activities.</p>
-    </section>-->
+            <h3>About Our Sunday School</h3>
+            <p>The Sunday School at St. Mary's Church offers faith formation for children from preschool through high school. Our dedicated team of catechists uses age-appropriate curricula and creative teaching methods to help children grow in their understanding and love of God.</p>
 
-    <!-- Gallery Content -->
-    <section class="content-section">
-        <div class="container">
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem;">Browse through our collection of photos capturing the vibrant life of our parish community. From liturgical celebrations to community events, these images tell the story of our faith journey together.</p>
+            <h3>Classes and Schedule</h3>
+            <p>Sunday School classes are held every Sunday after the 8:00 AM Mass. Children are grouped by age and grade level to ensure appropriate instruction:</p>
+            <ul>
+                <li><strong>Preschool (Ages 4-5):</strong> Introduction to God's love through stories, songs, and activities</li>
+                <li><strong>Primary (Grades 1-3):</strong> Basic prayers, Bible stories, and preparation for First Holy Communion</li>
+                <li><strong>Middle (Grades 4-6):</strong> Deeper exploration of the faith, sacraments, and Christian living</li>
+                <li><strong>High School (Grades 7-12):</strong> Confirmation preparation, apologetics, and faith in action</li>
+            </ul>
 
-            <!-- Church Building -->
-            <h2 style="color: var(--primary-color); margin-bottom: 30px;">Our Church</h2>
-            <div class="gallery-grid" style="margin-bottom: 60px;">
-                <div class="gallery-item">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);">
-                        <p style="color: var(--text-light); text-align: center; padding: 20px;">Church Exterior</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);">
-                        <p style="color: var(--text-light); text-align: center; padding: 20px;">Main Altar</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);">
-                        <p style="color: var(--text-light); text-align: center; padding: 20px;">Grotto of Our Lady</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);">
-                        <p style="color: var(--text-light); text-align: center; padding: 20px;">Stained Glass Windows</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);">
-                        <p style="color: var(--text-light); text-align: center; padding: 20px;">Church Interior</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);">
-                        <p style="color: var(--text-light); text-align: center; padding: 20px;">Parish Hall</p>
-                    </div>
-                </div>
-            </div>
+            <h3>Sacramental Preparation</h3>
+            <p>Our Sunday School program includes special preparation for the sacraments of First Holy Communion and Confirmation. These programs typically run for one to two years and involve both classroom instruction and family participation.</p>
+
+            <h3>Registration</h3>
+            <p>New students are welcome to join at any time during the year. Registration forms are available at the church office or after Sunday Mass. Parents are encouraged to be actively involved in their children's faith formation.</p>
+
+            <h3>Contact Information</h3>
+            <p>For more information about our Sunday School program, please contact the church office or speak with our Sunday School coordinator after Mass.</p>
         </div>
     </section>
-
+    
   <footer class = "footer">
 
         <div class = "footer-container">
@@ -123,16 +107,11 @@
         </div>
 
         <div class = "footer-bottom">
-            <p> &copy; 2025 ByteSurge. All rights reserved. </p>
+            <p> &copy; 2026 Lehan Welikala. All rights reserved. </p>
         </div>
   </footer>
-
   <script src = "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src = "main.js"> </script>
   <script src = "https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 </body>
-</html>
-
-
-

@@ -23,8 +23,16 @@
         <nav id = "navMenu">
             <ul>
                 <li><a href = "index.html"> Home </a></li>
-                <li><a href = "about-page.html"> About Us </a></li>
-                <li><a href = "associations-page.html"> Associations </a></li>
+                <li class = "dropdown"> 
+                    <a href = "about-page.html" class = "dropbtn"> About Us </a>
+                    <div class = "dropdown-content">
+                        <a href = "nedimala.html"> Infant Jesus Church </a>
+                        <a href = "sunday-school.html"> Sunday School </a>
+                        <a href = "sipsevan.html"> Sip Sevana </a>
+                    </div>
+                </li>
+                <li><a href = "sacrements.html" class = "nav-link"> Sacrements </a></li>
+                <li><a href = "associations-page.html" class = "nav-link"> Associations </a></li>
                 <!--<li><a href = "reflections-page.html" class = "nav-link"> Reflections </a></li>-->
                 <li><a href = "events-page.html" class = "nav-link"> Events </a></li>
                 <li><a href = "announcements-page.html" class = "nav-link"> Announcements </a></li>
@@ -40,31 +48,134 @@
             <h1> Contact Us </h1>
     </section>
 
-    <section class = "tech-section">
-        <div class = "tech-grid scroll-snap">
 
-            <!-- Feature Card 1 -->
-             <div class = "tech-card" data-aos = "zoom-in">
-                <h1> 📍 </h1>
-                <h3> Address </h3>
-                <p> No. 123, <br> Galle Road, Dehiwala, <br> Sri Lanka</p>
-             </div>
+    <!-- Contact Information -->
+    <section class="content-section">
+        <div class="container">
+            <div class="info-grid" style="margin-bottom: 60px;">
+                <div class="info-card">
+                    <div class="icon">📍</div>
+                    <h3>Address</h3>
+                    <p>St. Mary's Church</p>
+                    <p>Dehiwala</p>
+                    <p>Sri Lanka</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">📞</div>
+                    <h3>Phone</h3>
+                    <p>Office: [Phone Number]</p>
+                    <p>Emergency: [Emergency Number]</p>
+                    <p>Available 24/7 for emergencies</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>General: [Email Address]</p>
+                    <p>Parish Priest: [Priest Email]</p>
+                    <p>Sunday School: [Sunday School Email]</p>
+                </div>
+            </div>
 
-             <!-- Feature Card 2 -->
-              <div class = "tech-card" data-aos = "zoom-in" data-aos-delay = "100">
-                <h1> ☎️ </h1>
-                <h3> Phone </h3>
-                <p> 123456789 </p>
-              </div>
+            <!-- Office Hours -->
+            <div style="max-width: 800px; margin: 0 auto 60px; text-align: center; padding: 30px; background-color: var(--secondary-color); border-radius: 10px;">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;">Parish Office Hours</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: left;">
+                    <div>
+                        <p><strong>Monday - Friday:</strong></p>
+                        <p>9:00 AM - 12:00 PM</p>
+                        <p>2:00 PM - 5:00 PM</p>
+                    </div>
+                    <div>
+                        <p><strong>Saturday:</strong></p>
+                        <p>9:00 AM - 12:00 PM</p>
+                    </div>
+                    <div>
+                        <p><strong>Sunday:</strong></p>
+                        <p>After all Masses</p>
+                    </div>
+                </div>
+                <p style="margin-top: 20px; color: var(--text-light); font-size: 0.95rem;">Closed on public holidays. For emergencies, please call our emergency number.</p>
+            </div>
 
-              <!-- Feature Card 2 -->
-              <div class = "tech-card" data-aos = "zoom-in" data-aos-delay = "100">
-                <h1> ✉️ </h1>
-                <h3> Email </h3>
-                <p> stmaryschurchdehiwala@gmail.com</p>
-              </div>
+            <!-- Contact Form -->
+            <div class="form-container">
+                <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary-color);">Send Us a Message</h2>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="contactName">Your Name *</label>
+                        <input type="text" id="contactName" name="contactName" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail">Your Email *</label>
+                        <input type="email" id="contactEmail" name="contactEmail" required placeholder="Enter your email address">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="sacraments">Sacraments Information</option>
+                            <option value="baptism">Baptism</option>
+                            <option value="marriage">Marriage / Wedding</option>
+                            <option value="sunday-school">Sunday School</option>
+                            <option value="volunteer">Volunteer Opportunities</option>
+                            <option value="donations">Donations / Contributions</option>
+                            <option value="mass-intentions">Mass Intentions</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Enter your message here..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">Send Message</button>
+                        <button type="reset" class="btn-reset">Clear Form</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Map Section -->
+            <div style="margin-top: 60px;">
+                <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 30px;">Find Us</h2>
+                <div style="max-width: 900px; margin: 0 auto; background-color: var(--secondary-color); padding: 20px; border-radius: 10px; text-align: center;">
+                    <p style="margin-bottom: 20px;">St. Mary's Church is located in Dehiwala, easily accessible by public transport and private vehicles.</p>
+                    <div style="background-color: var(--white); padding: 100px 20px; border-radius: 5px; color: var(--text-light);">
+                        [Google Maps Embed will go here]
+                        <p>Map showing St. Mary's Church Dehiwala</p>
+                    </div>
+                    <p style="margin-top: 20px; color: var(--text-light); font-size: 0.95rem;">Parking is available on church premises. Public buses stop nearby on Galle Road.</p>
+                </div>
+            </div>
+
+            <!-- Additional Contact Information -->
+            <div style="max-width: 800px; margin: 60px auto 0; padding: 30px; background-color: var(--secondary-color); border-radius: 10px;">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;">Frequently Asked</h3>
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">What are your Mass times?</h4>
+                    <p style="color: var(--text-light);">Weekdays: 6:30 AM | Sundays: 6:30 AM, 8:00 AM, 9:30 AM (Sinhala), 5:00 PM</p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">How do I schedule a sacrament?</h4>
+                    <p style="color: var(--text-light);">Please contact the parish office during office hours or fill out the contact form above with "Sacraments Information" as the subject.</p>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">Can I visit outside of Mass times?</h4>
+                    <p style="color: var(--text-light);">The church is open daily for private prayer. Please check with the office for specific hours.</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-dark); margin-bottom: 10px;">How can I get involved in parish activities?</h4>
+                    <p style="color: var(--text-light);">We welcome volunteers! Visit our Associations page or contact the office to learn about opportunities to serve.</p>
+                </div>
+            </div>
         </div>
     </section>
+
 
   <footer class = "footer">
 

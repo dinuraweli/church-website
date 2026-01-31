@@ -1,0 +1,45 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--nav-hero-gradient);
+}
+
+.content-section {
+    padding: 60px 0;
+    background-color: var(--sectionbg);
+}
+
+.content-section h2 {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin: 40px 0 20px;
+}
+
+.content-section h3 {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin: 30px 0 15px;
+}
+
+.content-section p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.content-section ul, .content-section ol {
+    margin: 15px 0 15px 30px;
+    color: var(--text-light);
+}
+
+.content-section li {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

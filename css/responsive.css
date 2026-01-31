@@ -24,6 +24,11 @@
   .footer-social {justify-content: center;}
   .history-text1 h1{font-size: 36px;}
   .history-text1 p {font-size: 18px; line-height: 1.6;}
+  .content-section h2 {font-size: 1.7rem;}
+  .container2 {margin: 0 auto; padding: 0 20px;}
+  .container {margin: 0 auto; padding: 0 20px;}
+  .top-buttons{padding: 10px;}
+
 }
 
 /* Hamburger Menu Responsive style */
@@ -138,5 +143,27 @@
   .hero h2 {font-size: 2rem;}
   .hero .btn {width: 100%; max-width: 200px; }
   #navMenu a {font-size: 10px;}
+   .content-section h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .container2 {
+      margin: 0 auto;
+      padding: 0 20px;
+    }
 }
 

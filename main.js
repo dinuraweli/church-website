@@ -52,3 +52,17 @@ document.addEventListener('keydown', (event) => {
       }
     });
   }
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const view = btn.dataset.view;
+
+    // button active state
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    // content switching
+    document.querySelectorAll('.view-content').forEach(v => v.classList.remove('active'));
+    document.getElementById(view + 'View').classList.add('active');
+  });
+});

@@ -1,7 +1,16 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--nav-hero-gradient);
+}
+
+/* Hero Section */
+
 .hero-banner {
   /*background: url('images/logo.jpg') no-repeat center center/cover;*/
-  background-color: var(--accent-color);
-  height: 40vh;
+  background: var(--nav-hero-gradient);
+  height: 30vh;
   color: white;
   display: flex;
   align-items: center;
@@ -9,13 +18,16 @@
   text-align: center;
   position: relative;
   padding: 0 20px;
+  /*background: linear-gradient(135deg, #4b0082, #5c5cff);
+  background-image: url('assets/abstract-tech-bg.svg'); /* or PNG
+  background-size: cover;
+  background-position: center;*/
 }
 
 .hero-banner::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.916), rgba(0, 0, 0, 0.432))
 }
 
 .hero-content {
@@ -171,3 +183,136 @@ i:hover {
   transform: scale(1.1);
 }
 
+/* Sacrament Cards */
+.sacrament-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.sacrament-card {
+    background-color: var(--sectionbg);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--accent-color);
+}
+
+.sacrament-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.sacrament-card p {
+    margin-bottom: 15px;
+    color: var(--text-color2);
+}
+
+.sacrament-card .requirements {
+    margin-top: 20px;
+}
+
+.sacrament-card .requirements h4 {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: inline-block;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--white);
+    color: var(--accent-color);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+}
+
+/* Events Preview */
+.events-preview {
+    padding: 60px 0;
+    background-color: var(--sectionbg);
+}
+
+.events-preview h2 {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.event-card {
+    background-color: var(--sectionbg);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.event-date {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 80px;
+}
+
+.event-date .day {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.event-date .month {
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.event-info h3 {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.event-info p {
+    color: var(--text-light);
+}
+
+.center-btn {
+    text-align: center;
+}

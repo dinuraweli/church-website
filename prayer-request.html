@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang= "en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charse = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 10">
     <title> St. Mary's Church, Dehiwala </title>
     <link rel = "stylesheet" href = "css/base.css">
     <link rel = "stylesheet" href = "css/layout.css">
-    <link rel = "stylesheet" href = "gallery-page-style.css">
+    <link rel = "stylesheet" href = "prayer-request-style.css">
     <link rel = "stylesheet" href = "css/responsive.css">
     <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
     <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
@@ -16,8 +16,8 @@
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
 </head>
 
-<body>
 
+<body>
 <header>
     <div class = "logo"> <a href = "index.html" class = "logo"> St Mary's Church, Dehiwala
       </a> 
@@ -48,52 +48,61 @@
 
     <section class = "hero-banner">
         <div class = "hero-content">
-            <h1> Church Gallery </h1>
+            <h1> Church Events </h1>
+            <p> Join us for our parish activities and celebrations. </p>
     </section>
 
-    <!--<section class = "gallery-section">
-        <h2 data-aos = "fade-down"> Images </h2>
-        <p class = "gallery-subtext" data-aos = "fade-up"> Stay connected with all our upcoming events, services and parish activities.</p>
-    </section>-->
-
-    <!-- Gallery Content -->
+    <!-- Prayer Request Content -->
     <section class="content-section">
         <div class="container">
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem;">Browse through our collection of photos capturing the vibrant life of our parish community. From liturgical celebrations to community events, these images tell the story of our faith journey together.</p>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center; margin-bottom: 40px;">
+                <p style="font-size: 1.1rem; line-height: 1.8;">We believe in the power of prayer. Our parish community is here to pray with you and for you. Whether you're facing challenges, celebrating blessings, or simply need spiritual support, we invite you to share your intentions with us.</p>
+                <p style="font-size: 1rem; color: var(--text-light); margin-top: 20px;">"Again, truly I tell you that if two of you on earth agree about anything they ask for, it will be done for them by my Father in heaven." - Matthew 18:20</p>
+            </div>
 
-            <!-- Church Building -->
-            <h2 style="color: var(--primary-color); margin-bottom: 30px;">Our Church</h2>
-            <div class="gallery-grid" style="margin-bottom: 60px;">
-                <div class="gallery-item">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);">
-                        <p style="color: var(--text-light); text-align: center; padding: 20px;">Church Exterior</p>
+            <div class="form-container">
+                <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary-color);">Submit Your Prayer Request</h2>
+                
+                <form id="prayerRequestForm">
+                    <div class="form-group">
+                        <label for="prayerRequest">Prayer Request / Intention *</label>
+                        <textarea id="prayerRequest" name="prayerRequest" required placeholder="Please share your prayer intention or request here..."></textarea>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);">
-                        <p style="color: var(--text-light); text-align: center; padding: 20px;">Main Altar</p>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="anonymous" name="anonymous" checked>
+                        <label for="anonymous">Submit anonymously (Your identity will not be shared)</label>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);">
-                        <p style="color: var(--text-light); text-align: center; padding: 20px;">Grotto of Our Lady</p>
+
+                    <div id="nameEmailFields" style="display: none;">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address">
+                        </div>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);">
-                        <p style="color: var(--text-light); text-align: center; padding: 20px;">Stained Glass Windows</p>
+
+                    <div style="background-color: #e7f3ff; padding: 15px; border-radius: 5px; margin: 20px 0;">
+                        <p style="margin: 0; font-size: 0.9rem; color: var(--text-dark);">
+                            <strong>Privacy Notice:</strong> Prayer requests are only visible to church administrators. They will be prayed for during Mass and by our prayer groups. Your information will be kept confidential and will not be shared publicly.
+                        </p>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);">
-                        <p style="color: var(--text-light); text-align: center; padding: 20px;">Church Interior</p>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">Submit Prayer Request</button>
+                        <button type="reset" class="btn-reset">Clear Form</button>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);">
-                        <p style="color: var(--text-light); text-align: center; padding: 20px;">Parish Hall</p>
-                    </div>
-                </div>
+                </form>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px;">
+                <h3 style="color: var(--primary-color); margin-bottom: 20px;">Need Immediate Assistance?</h3>
+                <p style="margin-bottom: 20px;">If you're in urgent need of prayer or pastoral care, please contact our parish office directly.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
             </div>
         </div>
     </section>
@@ -131,8 +140,5 @@
   <script src = "main.js"> </script>
   <script src = "https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-</body>
-</html>
-
-
-
+  </body>
+  </html>

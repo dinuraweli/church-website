@@ -26,8 +26,16 @@
         <nav id = "navMenu">
             <ul>
                 <li><a href = "index.html"> Home </a></li>
-                <li><a href = "about-page.html"> About Us </a></li>
-                <li><a href = "associations-page.html"> Associations </a></li>
+                <li class = "dropdown"> 
+                    <a href = "about-page.html" class = "dropbtn"> About Us </a>
+                    <div class = "dropdown-content">
+                        <a href = "nedimala.html"> Infant Jesus Church </a>
+                        <a href = "sunday-school.html"> Sunday School </a>
+                        <a href = "sipsevan.html"> Sip Sevana </a>
+                    </div>
+                </li>
+                <li><a href = "sacrements.html" class = "nav-link"> Sacrements </a></li>
+                <li><a href = "associations-page.html" class = "nav-link"> Associations </a></li>
                 <!--<li><a href = "reflections-page.html" class = "nav-link"> Reflections </a></li>-->
                 <li><a href = "events-page.html" class = "nav-link"> Events </a></li>
                 <li><a href = "announcements-page.html" class = "nav-link"> Announcements </a></li>
@@ -41,8 +49,7 @@
     <section class = "hero-banner">
         <div class = "hero-content">
             <h1> Church Events </h1>
-            <p> Stay connected with all our upcoming events, services and parish activities. 
-            </p>
+            <p> Join us for our parish activities and celebrations. </p>
     </section>
     <!-- Mass Schedule -->
 
@@ -52,31 +59,196 @@
             <div class = "values-item" data-aos = "zoom-in">
                 <i class="bi bi-book"></i>
                 <h3> Sunday English Mass </h3>
-                <p> 🕖 6:00 am </p>
-                <p> 🕖 7:30 am </p>
-                <p> 🕖 6:00 pm </p>
+                <p> 6:00 AM </p>
+                <p> 7:30 AM </p>
+                <p> 6:00 PM </p>
             </div>
             
             <div class = "values-item" data-aos = "zoom-in" data-aos-delay = "100">
                 <i class="bi bi-book"></i>
                 <h3> Sunday Sinhala Mass </h3>
-                <p> 🕖 10:15 am </p>
+                <p> 10:15 AM </p>
+                <h3> Sunday Tamil Mass </h3>
+                <p> 09:00 AM </p>
             </div>
 
             <div class = "values-item" data-aos = "zoom-in" data-aos-delay = "200">
                 <i class="bi bi-book"></i>
-                <h3> Sunday Tamil Mass </h3>
-                <p> 🕖 09:00 am </p>
+                <h3>Saturday Mass </h3>
+                <p> 07:00 AM </p>
+                <p> 06:00 PM </p>
             </div>
 
             <div class = "values-item" data-aos = "zoom-in" data-aos-delay = "250">
                 <i class="bi bi-book"></i>
-                <h3> Saturday English Mass </h3>
-                <p> 🕖 6:00 pm </p>
+                <h3> Weekday Mass </h3>
+                <h4> Morning </h4>
+                <p> 6:00 AM </p>
+                <h4> Evening </h4>
+                <p> 6:00 PM</p>
+                <p> *No evening Mass on Mondays</p>
             </div>
         </div>
     </section>
-    <section id="associations" class="associations">
+
+<!-- Recurring Events -->
+  <section class="content-section">
+        <div class="container">            
+            <h2 style="color: var(--primary-color); margin-bottom: 30px;">Timetable</h2>
+            
+            <div class="sacrament-grid" style="margin-bottom: 60px;">
+                <div class="sacrament-card">
+                    <h3>Sunday School</h3>
+                    <p><strong>English & Sinhala Medium:</strong> 8:45 AM </p>
+                    <p><strong>Tamil Medium:</strong> 10:00 AM </p>
+                    <p>Faith formation for children of all ages.</p>
+                </div>
+
+                <div class="sacrament-card">
+                    <h3>Rosary</h3>
+                    <p><strong>Daily:</strong> 6:00 PM</p>
+                    <p><strong>Location:</strong> Main Church</p>
+                    <p>Join in praying the Holy Rosary together as a community.</p>
+                </div>
+            </div>
+
+            <!-- Upcoming Events -->
+            <h2 style="color: var(--primary-color); margin-bottom: 30px;">This Month</h2>
+            
+            <div class="events-grid" style="margin-bottom: 60px;">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">29</span>
+                        <span class="month">Jan</span>
+                        <span class="day">-</span>
+                        <span class="day">6</span>
+                        <span class="month">Feb</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Novenas</h3>
+                        <p><strong>Time:</strong> 6:00 PM</p>
+                        <p>Will be organised by parish zone members (English / Sinhala / Tamil)</p>
+                        <p>Followed by Holy Mass</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">4</span>
+                        <span class="month">Feb</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Day of Confessions</h3>
+                        <p><strong>Time:</strong> 6:00 PM onwards </p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">07</span>
+                        <span class="month">Feb</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Special Mass for the Sick & Elderly</h3>
+                        <p><strong>Time:</strong> 8:00 AM </p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">07</span>
+                        <span class="month">Feb</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Solemn Vespers Service</h3>
+                        <p><strong>Time:</strong> 6:00 PM</p>
+                        <p><strong>Presided by :</strong> Rev. Fr. Eranga De Silva</p>
+                        <p>Followed by procession with Our Lady's Statue</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">08</span>
+                        <span class="month">Feb</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Festive High Mass</h3>
+                        <p><strong>Time:</strong> 7:30 AM</p>
+                        <p><strong>Presided by :</strong> Rev. Fr. Nilantha Ediriwickrama - Archdiocesan Archivist</p>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">18</span>
+                        <span class="month">Feb</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Ash Wednesday Mass</h3>
+                        <p><strong>Times:</strong> TBA </p>
+                        <p><strong>Location:</strong> Main Church</p>
+                        <p>Beginning of Lent. Mass with distribution of ashes.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Annual Events -->
+            <h2 style="color: var(--primary-color); margin-bottom: 30px;">Annual Celebrations</h2>
+            
+            <div class="sacrament-grid" style="margin-bottom: 60px;">
+                <div class="sacrament-card">
+                    <h3>Parish Feast Day</h3>
+                    <p><strong>Date:</strong> August 15 (Assumption of Mary)</p>
+                    <p>Nine-day novena, procession, main Mass, fellowship lunch, and cultural evening.</p>
+                </div>
+
+                <div class="sacrament-card">
+                    <h3>Christmas Celebrations</h3>
+                    <p><strong>December 24-25</strong></p>
+                    <p>Advent preparations, Christmas novena, Midnight Mass, and carol service.</p>
+                </div>
+
+                <div class="sacrament-card">
+                    <h3>Easter Triduum</h3>
+                    <p><strong>Holy Thursday - Easter Sunday</strong></p>
+                    <p>Holy Thursday Mass, Good Friday Passion, Easter Vigil, and Easter Sunday celebrations.</p>
+                </div>
+
+                <div class="sacrament-card">
+                    <h3>First Holy Communion</h3>
+                    <p><strong>Date:</strong> May (annually)</p>
+                    <p>Children receive Jesus in the Eucharist for the first time.</p>
+                </div>
+
+                <div class="sacrament-card">
+                    <h3>Confirmation</h3>
+                    <p><strong>Date:</strong> October (annually)</p>
+                    <p>Youth receive the fullness of the Holy Spirit through Confirmation.</p>
+                </div>
+
+                <div class="sacrament-card">
+                    <h3>Parish Picnic</h3>
+                    <p><strong>Date:</strong> July (annually)</p>
+                    <p>Family fun day with games, food, and fellowship for all parishioners.</p>
+                </div>
+            </div>
+
+            <!-- Event Calendar Note -->
+            <div style="padding: 30px; background-color: var(--sectionbg); border-radius: 10px; text-align: center;">
+                <h2 style="color: var(--accent-color); margin-bottom: 15px;">Stay Updated</h2>
+                <p style="margin-bottom: 20px; color: black">For the most current event information and any schedule changes, please check the weekly bulletin or parish notice board.</p>
+                <p style="color: black">If you have questions about any event, please contact the parish office.</p>
+                <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;">Contact Us</a>
+            </div>
+        </div>
+    </section>
+        
+
+
+    
+   <!-- <section id="associations" class="associations">
     <div class="associations-container">
         <h2> Upcoming Events </h2>
         <p> Mark your calendars for these services and activities x</p>
@@ -132,7 +304,7 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <footer class = "footer">

@@ -30,7 +30,6 @@ header {
   inset: 0;
 }
 
-
 .hero-content {
   position: relative;
   z-index: 1;
@@ -47,39 +46,6 @@ header {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.cta-buttons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.btn {
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.btn.primary {
-  background-color: var(--accent-color);
-  color: white;
-}
-
-.btn.primary:hover {
-  background-color: #5d5a5a;
-}
-
-.btn.secondary {
-  background-color: white;
-  color: #111;
-}
-
-.btn.secondary:hover {
-  background-color: #ddd;
 }
 
 /* Content Section */
@@ -100,14 +66,14 @@ header {
 }
 
 .content-section p {
-    color: var(--text-color2);
+    color: var(--text-light);
     margin-bottom: 15px;
     line-height: 1.8;
 }
 
 .content-section ul, .content-section ol {
     margin: 15px 0 15px 30px;
-    color: var(--text-color2);
+    color: var(--text-light);
 }
 
 .content-section li {
@@ -115,49 +81,98 @@ header {
     line-height: 1.6;
 }
 
-/* Sacrament Cards */
-.sacrament-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+/* Form Styles */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-color2);
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
     margin-top: 30px;
 }
 
-.sacrament-card {
-    background-color: var(--sectionbg);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    border-left: 5px solid var(--accent-color);
+.btn-submit {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.sacrament-card h3 {
-    color: var(--accent-color);
-    margin-bottom: 15px;
+.btn-submit:hover {
+    background-color:darkslategray;
 }
 
-.sacrament-card p {
-    margin-bottom: 15px;
+.btn-reset {
+    background-color: #6c757d;
+    color: var(--text-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.sacrament-card .requirements {
-    margin-top: 20px;
+.btn-reset:hover {
+    background-color: #5a6268;
 }
 
-.sacrament-card .requirements h4 {
-    color: var(--accent-color);
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
-
-h2 {
-    color: var(--accent-color);
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-/* Buttons */
 .btn {
     padding: 12px 30px;
     text-decoration: none;
@@ -170,7 +185,7 @@ h2 {
 
 .btn-primary {
     background-color: var(--white);
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 .btn-primary:hover {

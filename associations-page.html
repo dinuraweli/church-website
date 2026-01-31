@@ -23,13 +23,22 @@
         <nav id = "navMenu">
             <ul>
                 <li><a href = "index.html"> Home </a></li>
-                <li><a href = "about-page.html"> About Us </a></li>
-                <li><a href = "associations-page.html"> Associations </a></li>
+                <li class = "dropdown"> 
+                    <a href = "about-page.html" class = "dropbtn"> About Us </a>
+                    <div class = "dropdown-content">
+                        <a href = "nedimala.html"> Infant Jesus Church </a>
+                        <a href = "sunday-school.html"> Sunday School </a>
+                        <a href = "sipsevan.html"> Sip Sevana </a>
+                    </div>
+                </li>
+                <li><a href = "sacrements.html" class = "nav-link"> Sacrements </a></li>
+                <li><a href = "associations-page.html" class = "nav-link"> Associations </a></li>
                 <!--<li><a href = "reflections-page.html" class = "nav-link"> Reflections </a></li>-->
                 <li><a href = "events-page.html" class = "nav-link"> Events </a></li>
                 <li><a href = "announcements-page.html" class = "nav-link"> Announcements </a></li>
                 <li><a href = "gallery-page.html" class = "nav-link"> Gallery </a></li>
                 <li><a href = "history-page.html" class = "nav-link"> Church History </a></li>
+                <li><a href = "prayer-request.html" class = "nav-link"> Prayer Request </a></li>
                 <li><a href = "contactus-page.html" class = "btn-outline" id = "openTestDrive"> Conatct Us </a></li>
             </ul>
         </nav>
@@ -38,63 +47,213 @@
     <section class = "hero-banner">
         <div class = "hero-content">
             <h1> Parish Associations </h1>
-            <p> Get to know more about the associations in your church.
+            <p> Get to know more about the associations in our church.
             </p>
-            <div class = "cta-buttons">
-                <a href = "crv-config.html" class = "btn primary"> Learn More </a>
+        </div>
+    </section>
+    
+    <!-- Associations Content -->
+    <section class="content-section">
+        <div class="container">
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem;">Our parish is blessed with many active associations and groups that serve our community and help parishioners grow in faith. Whether you're looking to serve others, deepen your spiritual life, or connect with fellow parishioners, there's a place for you!</p>
+
+            <div class="sacrament-grid">
+                <!-- Legion of Mary -->
+                <div class="sacrament-card">
+                    <h3>Legion of Mary</h3>
+                    <p>The Legion of Mary is a lay apostolic association dedicated to service and evangelization under the guidance of the Holy Spirit and the Blessed Virgin Mary.</p>
+                    <p><strong>Activities:</strong></p>
+                    <ul>
+                        <li>Home visitations and prayer</li>
+                        <li>Visiting the sick and elderly</li>
+                        <li>Street evangelization</li>
+                        <li>Supporting parish activities</li>
+                        <li>Rosary recitation and devotions</li>
+                    </ul>
+                    <p><strong>Meetings:</strong> Every Tuesday at 6:00 PM</p>
+                    <p><strong>Open to:</strong> All parishioners committed to serving Mary and the Church</p>
+                </div>
+
+                <!-- St. Vincent de Paul Society -->
+                <div class="sacrament-card">
+                    <h3>St. Vincent de Paul Society</h3>
+                    <p>The Society of St. Vincent de Paul is dedicated to serving the poor, the suffering, and the marginalized, following the example of our patron saint.</p>
+                    <p><strong>Activities:</strong></p>
+                    <ul>
+                        <li>Assisting families in need</li>
+                        <li>Food distribution programs</li>
+                        <li>Financial assistance for education and medical needs</li>
+                        <li>Home visits to the poor and sick</li>
+                        <li>Clothing and essentials distribution</li>
+                    </ul>
+                    <p><strong>Meetings:</strong> First Sunday of each month after 8:00 AM Mass</p>
+                    <p><strong>Open to:</strong> All who wish to serve Christ in the poor</p>
+                </div>
+
+                <!-- Catholic Women's League -->
+                <div class="sacrament-card">
+                    <h3>Catholic Women's League</h3>
+                    <p>The Catholic Women's League brings together women of faith for fellowship, spiritual growth, and service to the parish and community.</p>
+                    <p><strong>Activities:</strong></p>
+                    <ul>
+                        <li>Monthly spiritual gatherings</li>
+                        <li>Organizing parish social events</li>
+                        <li>Supporting church maintenance and decoration</li>
+                        <li>Fundraising for charitable causes</li>
+                        <li>Prayer groups and retreats</li>
+                    </ul>
+                    <p><strong>Meetings:</strong> Second Saturday of each month at 3:00 PM</p>
+                    <p><strong>Open to:</strong> All women of the parish</p>
+                </div>
+
+                <!-- Youth Ministry -->
+                <div class="sacrament-card">
+                    <h3>Youth Ministry</h3>
+                    <p>Our Youth Ministry provides a vibrant community for young people to grow in faith, form lasting friendships, and discover their calling in Christ.</p>
+                    <p><strong>Activities:</strong></p>
+                    <ul>
+                        <li>Weekly youth meetings and Bible study</li>
+                        <li>Sports and recreational activities</li>
+                        <li>Service projects and community outreach</li>
+                        <li>Annual youth camp and retreats</li>
+                        <li>Music ministry and praise sessions</li>
+                    </ul>
+                    <p><strong>Meetings:</strong> Every Friday at 5:30 PM</p>
+                    <p><strong>Open to:</strong> Youth ages 13-25</p>
+                </div>
+
+                <!-- Altar Servers Society -->
+                <div class="sacrament-card">
+                    <h3>Altar Servers Society</h3>
+                    <p>Altar servers assist the priest during Mass and other liturgical celebrations, serving with reverence and dedication.</p>
+                    <p><strong>Activities:</strong></p>
+                    <ul>
+                        <li>Serving at daily and Sunday Masses</li>
+                        <li>Assisting at special celebrations and feast days</li>
+                        <li>Regular training and formation sessions</li>
+                        <li>Annual altar servers' retreat</li>
+                        <li>Participation in diocesan events</li>
+                    </ul>
+                    <p><strong>Training:</strong> First Saturday of each month at 9:00 AM</p>
+                    <p><strong>Open to:</strong> Boys and girls aged 10 and above who have received First Communion</p>
+                </div>
+
+                <!-- Choir and Music Ministry -->
+                <div class="sacrament-card">
+                    <h3>Choir & Music Ministry</h3>
+                    <p>Our choirs enhance our liturgical celebrations through sacred music, leading the congregation in worship and praise.</p>
+                    <p><strong>Groups:</strong></p>
+                    <ul>
+                        <li>Main Choir (English)</li>
+                        <li>Sinhala Choir</li>
+                        <li>Youth Choir</li>
+                        <li>Children's Choir</li>
+                        <li>Instrumentalists group</li>
+                    </ul>
+                    <p><strong>Practice:</strong> Varies by group; typically Saturday evenings</p>
+                    <p><strong>Open to:</strong> Anyone with a love for music and worship</p>
+                </div>
+
+                <!-- Catechism Teachers -->
+                <div class="sacrament-card">
+                    <h3>Catechism Teachers</h3>
+                    <p>Dedicated catechists who teach the faith to children and prepare them for the sacraments.</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Teaching Sunday School classes</li>
+                        <li>Preparing children for First Communion and Confirmation</li>
+                        <li>Organizing children's activities and events</li>
+                        <li>Ongoing formation and training</li>
+                    </ul>
+                    <p><strong>Meetings:</strong> Monthly planning meetings</p>
+                    <p><strong>Requirements:</strong> Commitment to faith formation and love for children</p>
+                </div>
+
+                <!-- Visiting the Sick Ministry -->
+                <div class="sacrament-card">
+                    <h3>Visiting the Sick Ministry</h3>
+                    <p>Ministers bring Holy Communion to the sick and homebound, providing spiritual comfort and companionship.</p>
+                    <p><strong>Activities:</strong></p>
+                    <ul>
+                        <li>Taking Holy Communion to the sick and elderly</li>
+                        <li>Prayer with those in hospitals and nursing homes</li>
+                        <li>Coordinating priest visits for sacraments</li>
+                        <li>Providing companionship and support</li>
+                    </ul>
+                    <p><strong>Training:</strong> Provided by the parish</p>
+                    <p><strong>Open to:</strong> Extraordinary Ministers of Holy Communion and compassionate parishioners</p>
+                </div>
+
+                <!-- Marriage Encounter -->
+                <div class="sacrament-card">
+                    <h3>Marriage Encounter</h3>
+                    <p>A ministry dedicated to strengthening marriages and helping couples grow closer to each other and to God.</p>
+                    <p><strong>Activities:</strong></p>
+                    <ul>
+                        <li>Weekend retreats for married couples</li>
+                        <li>Monthly enrichment sessions</li>
+                        <li>Support for engaged couples</li>
+                        <li>Marriage renewal celebrations</li>
+                    </ul>
+                    <p><strong>Meetings:</strong> Third Sunday of each month</p>
+                    <p><strong>Open to:</strong> Married couples and those preparing for marriage</p>
+                </div>
+
+                <!-- Extraordinary Ministers of Holy Communion -->
+                <div class="sacrament-card">
+                    <h3>Extraordinary Ministers of Holy Communion</h3>
+                    <p>Trained lay ministers who assist in distributing Holy Communion during Mass and to the sick.</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Distributing Holy Communion at Mass</li>
+                        <li>Bringing Communion to the homebound</li>
+                        <li>Assisting at special liturgies</li>
+                    </ul>
+                    <p><strong>Training:</strong> Comprehensive training and commissioning by the Archbishop</p>
+                    <p><strong>Requirements:</strong> Active Catholic in good standing, approved by the parish priest</p>
+                </div>
+
+                <!-- Lectors Ministry -->
+                <div class="sacrament-card">
+                    <h3>Lectors Ministry</h3>
+                    <p>Lectors proclaim the Word of God during Mass, helping the assembly to hear and understand the Scriptures.</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Reading the first and second readings at Mass</li>
+                        <li>Leading the Prayer of the Faithful</li>
+                        <li>Preparing and practicing readings</li>
+                    </ul>
+                    <p><strong>Training:</strong> Initial training and ongoing formation sessions</p>
+                    <p><strong>Open to:</strong> Confirmed Catholics with clear speaking ability</p>
+                </div>
+
+                <!-- Ushers and Welcomers -->
+                <div class="sacrament-card">
+                    <h3>Ushers & Welcomers</h3>
+                    <p>The first face of our parish community, welcoming parishioners and visitors with warmth and hospitality.</p>
+                    <p><strong>Responsibilities:</strong></p>
+                    <ul>
+                        <li>Greeting people as they arrive</li>
+                        <li>Distributing bulletins and materials</li>
+                        <li>Assisting with seating during crowded Masses</li>
+                        <li>Taking up the collection</li>
+                        <li>Ensuring safety and order</li>
+                    </ul>
+                    <p><strong>Schedule:</strong> Sign up for specific Mass times</p>
+                    <p><strong>Open to:</strong> All welcoming and friendly parishioners</p>
+                </div>
+            </div>
+
+            <!-- Join Us Section -->
+            <div style="margin-top: 80px; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto; padding: 40px; background-color: var(--secondary-color); border-radius: 10px;">
+                <h2 style="color: var(--primary-color); margin-bottom: 20px;">Ready to Get Involved?</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 30px;">We invite you to join one or more of our parish associations. Your time, talents, and presence are valued and needed!</p>
+                <p style="margin-bottom: 30px;">For more information about any of these groups, please contact the parish office or speak with the coordinator after Mass.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
             </div>
         </div>
     </section>
 
-    <section id="associations" class="associations">
-    <div class="associations-container">
-
-      <div class="grid">
-      <div class="card" data-aos = "zoom-in">
-        <h2> Parish Pastoral Council</h2>
-        <h3> Maybe moto or purpose </h3>
-        <p> Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-        </p>
-      </div>
-
-      <div class="card" data-aos = "zoom-out">
-        <h2> Liturgy Commitee </h2>
-        <h3> Maybe moto or purpose </h3>
-        <p> Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-        </p>
-      </div>
-
-      <div class="card" data-aos = "zoom-in">
-        <h2> Altar Servers Association </h2>
-        <p> Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-        </p>
-      </div>
-
-      <div class="card" data-aos = "zoom-out">
-        <h2> Human Development Society </h2>
-        <p> Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-            Some information about the association. Some information about the association.
-        </p>
-      </div>
-
-      </div>
-    </div>
-  </section>
 
   <footer class = "footer">
 

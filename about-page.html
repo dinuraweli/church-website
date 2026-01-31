@@ -26,8 +26,16 @@
         <nav id = "navMenu">
             <ul>
                 <li><a href = "index.html"> Home </a></li>
-                <li><a href = "about-page.html"> About Us </a></li>
-                <li><a href = "associations-page.html"> Associations </a></li>
+                <li class = "dropdown"> 
+                    <a href = "about-page.html" class = "dropbtn"> About Us </a>
+                    <div class = "dropdown-content">
+                        <a href = "nedimala.html"> Infant Jesus Church </a>
+                        <a href = "sunday-school.html"> Sunday School </a>
+                        <a href = "sipsevan.html"> Sip Sevana </a>
+                    </div>
+                </li>
+                <li><a href = "sacrements.html" class = "nav-link"> Sacrements </a></li>
+                <li><a href = "associations-page.html" class = "nav-link"> Associations </a></li>
                 <!--<li><a href = "reflections-page.html" class = "nav-link"> Reflections </a></li>-->
                 <li><a href = "events-page.html" class = "nav-link"> Events </a></li>
                 <li><a href = "announcements-page.html" class = "nav-link"> Announcements </a></li>
@@ -40,35 +48,71 @@
 
   <section class = "hero-banner">
         <div class = "hero-content">
-            <h1> About St. Mary's Church, Dehiwala</h1>
-            <p> We are a family of believers committed to 
-                growing together in faith, hope, and love </p>
+            <h1> About St. Mary's Church, Dehiwala </h1>
         </div>
     </section>
 
-    <section class = "mission">
-         <div class = "mission-row reverse" data-aos = "fade-right">
-            <div class = "mission-image" data-aos = "zoom-in">
-              <a href = "images/DSC_1279.jpeg" class = "glightbox">
-                <img src = "images/DSC_1279.jpeg" alt = "Fast and Efficient">
-              </a>
-            </div>
-            <div class = "mission-text">
-                <h2> Our Mission </h2>
-                <p> St. Mary's Church, Dehiwala Church exists to glorify God by making disciples of Jesus Christ 
-                    who love God, love others, and serve the world. We are committed to creating an environment 
-                    where people can pursue an authentic relationship with Jesus Christ.
-                </p>
-
-                <P> Through worship, discipleship, fellowship, ministry, and evangelism, we seek to transform 
-                    lives and communities for the glory of God.</P>
-            </div>
-         </div>
-    </section>
-
     <!-- /* Core value section */ -->
+    
 
-    <section id = "specs" class = "values-grid">
+    <!-- General Church Information -->
+    <section class="content-section" id="general">
+        <div class="container2">
+            <h2>About St. Mary's Church Dehiwala</h2>
+            <p> St. Mary's Church Dehiwala is a vibrant Catholic parish 
+                dedicated to growing in faith, fostering fellowship, 
+                and serving others with love and compassion. 
+                We are a diverse community of believers united in our 
+                devotion to Jesus Christ and the Blessed Virgin Mary. </p>
+
+            <h3>Parish Leadership</h3>
+            <p> Our parish is blessed with dedicated clergy and lay leaders who work 
+                tirelessly to serve our community. The Parish Priest, along with assistant priest 
+                and a team of committed volunteers, guides our liturgical and pastoral activities.</p>
+
+            <h3>Mass Schedule</h3>
+            <p>We offer daily Mass throughout the week:</p>
+            <ul>
+                <li><strong>Weekday Mass:</strong> Monday to Friday at 6:00 AM</li>
+                <li><strong>Weekday Mass (Evening):</strong> Tuesday to Friday at 6:00 PM</li>
+                <li><strong>Saturday Mass (Evening):</strong> 7:00 AM, 6:00 PM</li>
+                <li><strong>Sunday Mass (English):</strong> 6:00 AM, 7:30 AM, 6:30 PM</li>
+                <li><strong>Sunday Mass (Sinhala):</strong> 10:15 AM</li>
+                <li><strong>Sunday Mass (Tamil):</strong> 9:00 AM</li>
+                <li><strong>Adoration:</strong> First Friday of every month</li>
+            </ul>
+            <!--<h3>Parish Associations</h3>
+            <p>Our parish offers a wide range of societies and associations for parishioners of all ages:</p>
+            <ul>
+                <li>Altar Servers Society</li>
+                <li>Legion of Mary</li>
+                <li>St. Vincent de Paul Society</li>
+                <li>YCS</li>
+                <li>Youth Ministry</li>
+                <li>Choir and Music Ministry</li>
+                <li>Catechism Classes</li>
+            </ul>-->
+            <h3> Parish Zones </h3>
+            <ul>
+                <li> Zone 1 </li>
+                <li> Zone 2 </li>
+                <li> Zone 3 </li>
+                <li> Zone 4 </li>
+                <li> Zone 5 </li>
+                <li> Zone 6 </li>
+                <li> Zone 7 </li>
+                <li> Zone 8 </li>
+                <li> Zone 9 </li>
+                <li> Zone 10 </li>
+                <li> Zone 11 </li>
+                <li> Zone 12 </li>
+                <li> Zone 13 </li>
+            </ul>
+        </div>
+    </section>
+        
+
+    <!--<section id = "specs" class = "values-grid">
         <h2 data-aos = "fade-down"> Our Values </h2>
         <p> The principles that guide everything we do </p>
         <div class = "values-container">
@@ -96,8 +140,11 @@
                 <p> Discover our church's rich history </p>
             </div>
         </div>
-    </section>
+    </section>-->
 
+    <!-- Messages -->
+
+    <div class = "container">
     <section class = "message">
 
          <!-- Parish Priest message -->
@@ -135,13 +182,43 @@
                 <a href = "#" class = "btn secondary2"> More Details > </a>
             </div>
          </div>
+         </div>
     </section> 
-    
-    <section id="associations" class="associations">
-    <div class="associations-container">
-      <h3>Parish Zones</h3>
-      <p> St. Mary's Church is more than just a place of prayer</p>
 
+
+    <section id = "specs" class = "stats-grid">
+        <div class = "container">
+        <h2 data-aos = "fade-down"> Discover our church </h2>
+        <div class = "stats-container">
+            <div class = "stat-item" data-aos = "zoom-in">
+                <img src = "images/DSC_1271.jpeg" alt = "Range">
+                <!--<i class="bi bi-calendar-event"></i>-->
+                <a href = "sunday-school.html"> Sunday School </a>
+            </div>
+            
+            <div class = "stat-item" data-aos = "zoom-in" data-aos-delay = "100">
+                <img src = "images/sipsevana.HEIC" alt = "0-62 mph">
+                <!--<i class="bi bi-people"></i>-->
+                <a href = "sipsevan.html"> Sip Sevana </a>
+            </div>
+
+            <div class = "stat-item" data-aos = "zoom-in" data-aos-delay = "200">
+                <img src = "images/ijc.jpg" alt = "Fuel efficiency">
+                <!--<i class="bi bi-heart"></i>-->
+                <a href = "nedimala.html"> Infant Jesus Church, Nedimala </a>
+            </div>
+
+            <!--<div class = "stat-item" data-aos = "zoom-in" data-aos-delay = "300">
+                <!--<img src = "images/history.png" alt = "Fuel efficiency">
+                <i class="bi bi-book"></i>
+                <h3> Our History </h3>
+                <p> Discover our church's rich history </p>
+            </div>-->
+        </div>
+        </div>
+    </section>
+
+    
       <!--<div class="grid">
       <div class="card" data-aos = "zoom-out">
         <h2> Parish Pastoral Council</h2>
@@ -188,6 +265,7 @@
       </div>
     </div>-->
   </section>
+  
 
   <footer class = "footer">
 

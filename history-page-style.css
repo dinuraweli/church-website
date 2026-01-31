@@ -1,7 +1,16 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--nav-hero-gradient);
+}
+
+/* Hero Section */
+
 .hero-banner {
   /*background: url('images/logo.jpg') no-repeat center center/cover;*/
-  background-color: var(--accent-color);
-  height: 50vh;
+  background: var(--nav-hero-gradient);
+  height: 30vh;
   color: white;
   display: flex;
   align-items: center;
@@ -9,13 +18,16 @@
   text-align: center;
   position: relative;
   padding: 0 20px;
+  /*background: linear-gradient(135deg, #4b0082, #5c5cff);
+  background-image: url('assets/abstract-tech-bg.svg'); /* or PNG
+  background-size: cover;
+  background-position: center;*/
 }
 
 .hero-banner::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.916), rgba(0, 0, 0, 0.432))
 }
 
 .hero-content {
@@ -53,81 +65,7 @@
 } */
 
 
-.history-text1 {
-    margin: 40px auto;
-    width: 550px;
-    max-width: 90%;
-    text-align: center;
-    padding: 0 10px;
-}
 
-.history-text1 h1{
-    font-size: 50px;
-    margin-bottom: 20px;
-    color: var(--accent-color);
-}
-
-.history-text1 p{
-    text-align:center;
-    line-height: 1.8;
-    font-size: 23px;
-    margin-bottom: 1px;
-}
-
-.history {
-    padding: 60px 70px;
-    background: var(--sectionbg);
-}
-
-.history-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    margin: 5px;
-    flex-wrap: wrap;
-    background-color: #0eefe400;
-}
-
-.history-image {
-    flex: 1 1 50%;
-    display: flex;
-    justify-content: center;
-}
-
-.history-image img {
-    width: 100%;
-    max-width: 500px;
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.4s ease;
-    background-color: #0eefe400;
-}
-
-.history-image img:hover {
-  transform: scale(1.03);
-}
-
-.history-text {
-    flex: 1 1 45%;
-    text-align: left;
-    background-color: #ff00e100;
-}
-
-.history-text h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #0b0b0b;
-}
-
-.history-text p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #0b0b0b;
-    text-align: left;
-    background-color: #cd256500;
-}
 
 /* Milestone section */
 
@@ -281,4 +219,37 @@ p.subtitle {
 
 .timeline-card ul li{
   margin-bottom: 6px;
+}
+
+/* Content Section */
+.content-section {
+    padding: 60px 0;
+}
+
+.content-section h2 {
+    color: var(--accent-color);
+    font-size: 2rem;
+    margin: 40px 0 20px;
+}
+
+.content-section h3 {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin: 30px 0 15px;
+}
+
+.content-section p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.content-section ul, .content-section ol {
+    margin: 15px 0 15px 30px;
+    color: var(--text-light);
+}
+
+.content-section li {
+    margin: 8px 0;
+    line-height: 1.6;
 }

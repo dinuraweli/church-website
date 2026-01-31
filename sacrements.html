@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> St. Mary's Church, Dehiwala </title>
+    <link rel = "stylesheet" href = "css/base.css">
+    <link rel = "stylesheet" href = "css/layout.css">
+    <link rel = "stylesheet" href = "sacrements-style.css">
+    <link rel = "stylesheet" href = "css/responsive.css">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel = "stylesheet" href = "https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+</head>
+
+<body>
+<header>
+    <div class = "logo"> <a href = "index.html" class = "logo"> St Mary's Church, Dehiwala
+      </a> 
+    </div>
+        <div class = "menu-toggle" id = "menu-toggle"> &#9776; </div>
+        <nav id = "navMenu">
+            <ul>
+                <li><a href = "index.html"> Home </a></li>
+                <li class = "dropdown"> 
+                    <a href = "about-page.html" class = "dropbtn"> About Us </a>
+                    <div class = "dropdown-content">
+                        <a href = "nedimala.html"> Infant Jesus Church </a>
+                        <a href = "sunday-school.html"> Sunday School </a>
+                        <a href = "sipsevan.html"> Sip Sevana </a>
+                    </div>
+                </li>
+                <li><a href = "sacrements.html" class = "nav-link"> Sacrements </a></li>
+                <li><a href = "associations-page.html" class = "nav-link"> Associations </a></li>
+                <!--<li><a href = "reflections-page.html" class = "nav-link"> Reflections </a></li>-->
+                <li><a href = "events-page.html" class = "nav-link"> Events </a></li>
+                <li><a href = "announcements-page.html" class = "nav-link"> Announcements </a></li>
+                <li><a href = "gallery-page.html" class = "nav-link"> Gallery </a></li>
+                <li><a href = "history-page.html" class = "nav-link"> Church History </a></li>
+                <li><a href = "prayer-request.html" class = "nav-link"> Prayer Request </a></li>
+                <li><a href = "contactus-page.html" class = "btn-outline" id = "openTestDrive"> Conatct Us </a></li>
+            </ul>
+        </nav>
+</header>
+
+  <section class = "hero-banner">
+        <div class = "hero-content">
+            <h1>The Seven Sacraments</h1>
+            <p>Encountering Christ through the sacred mysteries of the Church</p>
+        </div>
+    </section>
+
+    <!-- Sacraments Content -->
+    <section class="content-section">
+        <div class="container">
+            <p>The sacraments are outward signs instituted by Christ to give grace. Through them, we encounter Jesus and receive God's blessing in our lives. The Catholic Church celebrates seven sacraments, which are divided into three categories: Sacraments of Initiation, Sacraments of Healing, and Sacraments of Service.</p>
+
+            <div class="sacrament-grid">
+                <!-- Baptism -->
+                <div class="sacrament-card">
+                    <h3>Baptism</h3>
+                    <p>Baptism is the first sacrament of initiation and the gateway to all other sacraments. Through baptism, we become children of God, members of the Church, and are cleansed from original sin.</p>
+                    
+                    <div class="requirements">
+                        <h4>At St. Mary's Church:</h4>
+                        <p><strong>For Infants and Children:</strong></p>
+                        <ul>
+                            <li>Parents must be registered parishioners or obtain permission from their home parish</li>
+                            <li>Parents are required to attend a pre-baptism preparation class</li>
+                            <li>At least one godparent must be a confirmed Catholic in good standing</li>
+                        </ul>
+                        
+                        <p><strong>Required Documents:</strong></p>
+                        <ul>
+                            <li>Birth certificate of the child</li>
+                            <li>Marriage certificate of parents (if applicable)</li>
+                            <li>Baptismal certificate of godparents</li>
+                            <li>Letter of good standing from godparents' parish</li>
+                        </ul>
+                        
+                        <p><strong>Schedule:</strong> Baptisms are typically celebrated on the first and third Sundays of each month after the 9:30 AM Mass. Please contact the church office at least one month in advance to schedule.</p>
+                    </div>
+                </div>
+
+                <!-- Confirmation -->
+                <div class="sacrament-card">
+                    <h3>Confirmation</h3>
+                    <p>Confirmation completes baptismal grace. Through this sacrament, we receive the Holy Spirit more fully, are strengthened in faith, and become more perfectly bound to the Church.</p>
+                    
+                    <div class="requirements">
+                        <h4>At St. Mary's Church:</h4>
+                        <p><strong>Preparation Program:</strong></p>
+                        <ul>
+                            <li>Candidates must be baptized Catholics</li>
+                            <li>Typically administered to youth in Grade 10 or older</li>
+                            <li>Two-year preparation program required</li>
+                            <li>Regular attendance at Sunday Mass is expected</li>
+                            <li>Participation in retreat and service projects</li>
+                        </ul>
+                        
+                        <p><strong>Required Documents:</strong></p>
+                        <ul>
+                            <li>Baptismal certificate</li>
+                            <li>Letter from sponsor (must be a confirmed Catholic)</li>
+                            <li>Completion of preparation classes</li>
+                        </ul>
+                        
+                        <p><strong>Schedule:</strong> Confirmation is typically celebrated once a year by the Bishop. Registration for preparation begins in August. Contact the church office for more details.</p>
+                    </div>
+                </div>
+
+                <!-- Holy Communion -->
+                <div class="sacrament-card">
+                    <h3>Holy Communion (Eucharist)</h3>
+                    <p>The Eucharist is the source and summit of Christian life. In this sacrament, we receive the Body and Blood of Christ, truly present under the appearances of bread and wine.</p>
+                    
+                    <div class="requirements">
+                        <h4>At St. Mary's Church:</h4>
+                        <p><strong>First Holy Communion Preparation:</strong></p>
+                        <ul>
+                            <li>Children typically receive First Communion in Grade 2 or later</li>
+                            <li>Must be baptized and attending Sunday School or catechism classes</li>
+                            <li>Two-year preparation program including instruction in the faith</li>
+                            <li>Must have received the Sacrament of Reconciliation first</li>
+                            <li>Parents are expected to attend preparation sessions</li>
+                        </ul>
+                        
+                        <p><strong>Required Documents:</strong></p>
+                        <ul>
+                            <li>Baptismal certificate</li>
+                            <li>Regular attendance at Sunday School or catechism classes</li>
+                            <li>Parent consent form</li>
+                        </ul>
+                        
+                        <p><strong>Schedule:</strong> First Holy Communion is typically celebrated in May. Registration begins in September of the previous year.</p>
+                    </div>
+                </div>
+
+                <!-- Reconciliation -->
+                <div class="sacrament-card">
+                    <h3>Reconciliation (Confession)</h3>
+                    <p>Also known as Penance or Confession, this sacrament offers God's forgiveness for sins committed after Baptism. Through this sacrament, we are reconciled with God and the Church.</p>
+                    
+                    <div class="requirements">
+                        <h4>At St. Mary's Church:</h4>
+                        <p><strong>Confession Times:</strong></p>
+                        <ul>
+                            <li>Every Saturday: 4:00 PM - 5:00 PM</li>
+                            <li>Before major feast days (as announced)</li>
+                            <li>By appointment (contact the parish office)</li>
+                        </ul>
+                        
+                        <p><strong>First Reconciliation:</strong></p>
+                        <ul>
+                            <li>Children receive First Reconciliation before First Communion</li>
+                            <li>Preparation included in Sunday School program</li>
+                            <li>Parents participate in preparation sessions</li>
+                        </ul>
+                        
+                        <p><strong>Process:</strong> Enter the confessional, make the sign of the cross, confess your sins to the priest, receive absolution, and complete your penance.</p>
+                    </div>
+                </div>
+
+                <!-- Anointing of the Sick -->
+                <div class="sacrament-card">
+                    <h3>Anointing of the Sick</h3>
+                    <p>This sacrament provides spiritual healing and strength to those who are seriously ill, elderly, or preparing for surgery. It can be received multiple times during illness.</p>
+                    
+                    <div class="requirements">
+                        <h4>At St. Mary's Church:</h4>
+                        <p><strong>Who Should Receive:</strong></p>
+                        <ul>
+                            <li>Anyone seriously ill or weakened by old age</li>
+                            <li>Those preparing for major surgery</li>
+                            <li>Anyone in danger of death from illness or accident</li>
+                            <li>Can be received multiple times if condition worsens</li>
+                        </ul>
+                        
+                        <p><strong>How to Arrange:</strong></p>
+                        <ul>
+                            <li>Contact the parish office immediately when needed</li>
+                            <li>Priests are available 24/7 for emergencies</li>
+                            <li>Communal Anointing of the Sick celebrated during special Masses</li>
+                            <li>Home visits can be arranged for those unable to come to church</li>
+                        </ul>
+                        
+                        <p><strong>Important:</strong> Please don't wait until the last moment to call for a priest. The sacrament is meant for healing and should be received when someone first becomes seriously ill.</p>
+                    </div>
+                </div>
+
+                <!-- Holy Orders -->
+                <div class="sacrament-card">
+                    <h3>Holy Orders</h3>
+                    <p>Through Holy Orders, men are ordained to serve the Church as deacons, priests, or bishops. This sacrament imparts a sacred power and responsibility to shepherd God's people.</p>
+                    
+                    <div class="requirements">
+                        <h4>Discerning a Vocation:</h4>
+                        <p><strong>Requirements:</strong></p>
+                        <ul>
+                            <li>Must be a baptized and confirmed Catholic male</li>
+                            <li>Deep prayer life and commitment to the Church</li>
+                            <li>Years of seminary formation and preparation</li>
+                            <li>Evaluation and recommendation by the diocese</li>
+                        </ul>
+                        
+                        <p><strong>For Those Discerning:</strong></p>
+                        <ul>
+                            <li>Speak with the parish priest about your calling</li>
+                            <li>Contact the diocesan Vocations Director</li>
+                            <li>Participate in vocations retreats and programs</li>
+                            <li>Pray for guidance and seek spiritual direction</li>
+                        </ul>
+                        
+                        <p><strong>Support:</strong> Our parish actively supports vocations to the priesthood and religious life. We encourage young men to consider this sacred calling and offer guidance in discernment.</p>
+                    </div>
+                </div>
+
+                <!-- Matrimony -->
+                <div class="sacrament-card">
+                    <h3>Matrimony (Marriage)</h3>
+                    <p>The Sacrament of Matrimony unites a man and woman in a lifelong covenant of love, mirroring Christ's love for the Church. Marriage is a sacred bond blessed by God.</p>
+                    
+                    <div class="requirements">
+                        <h4>At St. Mary's Church:</h4>
+                        <p><strong>Preparation Requirements:</strong></p>
+                        <ul>
+                            <li>At least one partner must be a baptized Catholic</li>
+                            <li>Contact the parish office at least 6 months before intended wedding date</li>
+                            <li>Attend Pre-Cana (marriage preparation) program</li>
+                            <li>Meet with the priest for pre-marriage counseling sessions</li>
+                            <li>Both partners must be free to marry (not previously married or prior marriage annulled)</li>
+                        </ul>
+                        
+                        <p><strong>Required Documents:</strong></p>
+                        <ul>
+                            <li>Baptismal certificates (issued within 6 months of wedding)</li>
+                            <li>Confirmation certificates</li>
+                            <li>Letter of freedom to marry from home parish (if from another parish)</li>
+                            <li>Civil marriage license</li>
+                            <li>Completed pre-marriage questionnaires</li>
+                            <li>Proof of completion of marriage preparation program</li>
+                        </ul>
+                        
+                        <p><strong>Planning:</strong> Wedding ceremonies can be scheduled on Saturdays and other approved days. Discuss specific dates and times with the parish priest.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px; text-align: center;">
+                <h2>Need More Information?</h2>
+                <p>If you have questions about any of the sacraments or would like to schedule a sacrament, please contact our parish office.</p>
+                <a href="contactus-page.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+  <footer class = "footer">
+
+        <div class = "footer-container">
+            <div class = "footer-logo">
+                <img src = "images/Dehiwala Church.png" alt = "Range">
+                <h3> St. Mary's Church, Dehiwala </h3>
+                <p>  </p>
+            </div>
+            
+            <div class = "footer-contact">
+              <h3> Contact Us </h3>
+              <p> No 123, Galle Road, Dehiwala</p>
+              <p> Email: <a href="mailto:hello@bytesurge.com">stmaryschurchdehiwala@gmail.com</a></p>
+              <p> Telephone: 0123456789</p>
+            </div>
+
+            <div class = "footer-social">
+                <a href = "https://web.facebook.com/profile.php?id=100067947835984" target = "_blank" rel = "noopener noreferrer"><img src = "images/facebook.png" alt ="Facebook"></a>
+                <a href = "https://web.facebook.com/profile.php?id=100067947835984" target = "_blank" rel = "noopener noreferrer"><img src = "images/x.png" alt ="Twitter"></a>
+                <a href = "https://web.facebook.com/profile.php?id=100067947835984" target = "_blank" rel = "noopener noreferrer"><img src = "images/instagram.png" alt ="Instagram"></a>
+                <a href = "https://web.facebook.com/profile.php?id=100067947835984" target = "_blank" rel = "noopener noreferrer"><img src = "images/youtube.png" alt ="TouTube"></a>
+            </div>
+        </div>
+
+        <div class = "footer-bottom">
+            <p> &copy; 2026 Lehan Welikala. All rights reserved. </p>
+        </div>
+  </footer>
+
+
+  <script src = "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src = "main.js"> </script>
+  <script src = "https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+</body>
+</html>

@@ -49,23 +49,44 @@
         <nav id = "navMenu">
             <ul>
                 <li><a href = "index.html"> Home </a></li>
-                <li><a href = "about-page.html"> About Us </a></li>
-                <li><a href = "associations-page.html"> Associations </a></li>
+                <li class = "dropdown"> 
+                    <a href = "about-page.html" class = "dropbtn"> About Us </a>
+                    <div class = "dropdown-content">
+                        <a href = "nedimala.html"> Infant Jesus Church </a>
+                        <a href = "sunday-school.html"> Sunday School </a>
+                        <a href = "sipsevan.html"> Sip Sevana </a>
+                    </div>
+                </li>
+                <li><a href = "sacrements.html" class = "nav-link"> Sacrements </a></li>
+                <li><a href = "associations-page.html" class = "nav-link"> Associations </a></li>
                 <!--<li><a href = "reflections-page.html" class = "nav-link"> Reflections </a></li>-->
                 <li><a href = "events-page.html" class = "nav-link"> Events </a></li>
                 <li><a href = "announcements-page.html" class = "nav-link"> Announcements </a></li>
                 <li><a href = "gallery-page.html" class = "nav-link"> Gallery </a></li>
                 <li><a href = "history-page.html" class = "nav-link"> Church History </a></li>
+                <li><a href = "prayer-request.html" class = "nav-link"> Prayer Request </a></li>
                 <li><a href = "contactus-page.html" class = "btn-outline" id = "openTestDrive"> Conatct Us </a></li>
             </ul>
         </nav>
 </header>
 
+<!--<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>-->
+
     <section class = "hero-banner">
         <div class = "hero-content">
             <h1> St. Mary's Church, Dehiwala </h1>
-            <p> Small sentence that relates to church
-            </p>
+            <p> A church for faith, hope and love</p>
             <div class = "cta-buttons">
                 <a href = "events-page.html" class = "btn primary"> Mass Times </a>
                 <a href = "announcements-page.html" class = "btn secondary"> Announcements </a>
@@ -73,40 +94,51 @@
         </div>
     </section>
 
-    <section id = "specs" class = "stats-grid">
-        <h2 data-aos = "fade-down"> Discover our church </h2>
-        <div class = "stats-container">
-            <div class = "stat-item" data-aos = "zoom-in">
-                <!--<img src = "images/calendar.png" alt = "Range">-->
-                <i class="bi bi-calendar-event"></i>
-                <h3> Upcoming Events </h3>
-                <p> Stay connected with our community activities. </p>
-            </div>
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="container">
+            <h2>Welcome to Our Parish</h2>
+            <p> St. Mary's Church Dehiwala has been a cornerstone of faith in our community for many years. 
+                We are a vibrant Catholic parish dedicated to worship, fellowship, and service. 
+                Whether you are a long-time parishioner or visiting for the first time, we welcome you with open arms.
+            </p>
+            <p> Our church family is committed to growing in faith together, supporting one another, 
+                and reaching out to those in need. We invite you to join us in worship, participate in our ministries, 
+                and become part of our loving community.
+            </p>
+        </div>
+    </section>
+
+    <!-- Mass Schedule -->
+
+  <section class="content-section">
+        <div class="container">            
+            <h2 style="color: var(--primary-color); margin-bottom: 30px;">Holy Mass Schedule</h2>
             
-            <div class = "stat-item" data-aos = "zoom-in" data-aos-delay = "100">
-                <!--<img src = "images/community.png" alt = "0-62 mph">-->
-                <i class="bi bi-people"></i>
-                <h3> Our Community </h3>
-                <p>Learn about our church family and mission. </p>
-            </div>
+            <div class="sacrament-grid" style="margin-bottom: 60px;">
+                <div class="sacrament-card">
+                    <h3>Sunday Mass</h3>
+                    <p><strong>Sunday (English):</strong> 6:00 AM</p>
+                    <p><strong>Sunday (English):</strong> 7:30 AM</p>
+                    <p><strong>Sunday (Tamil):</strong> 9:00 AM</p>
+                    <p><strong>Sunday (Sinhala):</strong> 10:15 AM</p>
+                    <p><strong>Sunday (English):</strong> 6:00 PM</p>
+                </div>
 
-            <div class = "stat-item" data-aos = "zoom-in" data-aos-delay = "200">
-                <!--<img src = "images/reflections.png" alt = "Fuel efficiency">-->
-                <i class="bi bi-heart"></i>
-                <h3> Reflections </h3>
-                <p> Spiritual insights and inspirational messages. </p>
-            </div>
-
-            <div class = "stat-item" data-aos = "zoom-in" data-aos-delay = "300">
-                <!--<img src = "images/history.png" alt = "Fuel efficiency">-->
-                <i class="bi bi-book"></i>
-                <h3> Our History </h3>
-                <p> Discover our church's rich history </p>
+                <div class="sacrament-card">
+                    <h3>Weekdays & Saturday Mass</h3>
+                    <p><strong>Saturday (English):</strong> 7:00 AM</p>
+                    <p><strong>Saturday (English):</strong> 6:00 PM</p>
+                    <p><strong>Monday - Friday:</strong> 6:00 AM</p>
+                    <p><strong>Tuesday - Friday:</strong> 6:00 PM</p>
+                    <p>*No evening Mass on Monday.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class = "features">
+        <div class = "container">
          <div class = "feature-row" data-aos = "fade-right">
             <div class = "feature-image" data-aos = "zoom-in">
               <a href = "images/1293.jpeg" class = "glightbox">
@@ -122,7 +154,9 @@
                 <a href = "about-page.html" class = "btn secondary"> Learn More </a>
             </div>
          </div>
+         </div>
     </section>
+    
 
   <footer class = "footer">
 
@@ -149,7 +183,7 @@
         </div>
 
         <div class = "footer-bottom">
-            <p> &copy; 2025 ByteSurge. All rights reserved. </p>
+            <p> &copy; 2026 Lehan Welikala. All rights reserved. </p>
         </div>
   </footer>
 
