@@ -31,7 +31,7 @@ header.scrolled a{
 .logo a {
   color: var(--text-color);
   text-decoration: none;
-  font-size: 30px;
+  font-size: 22px;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -208,8 +208,13 @@ li.dropdown {
   transition: color 0.3s;
 }
 
+.footer-contact a{
+  text-decoration: none;
+  color: white;
+}
+
 .footer-contact a:hover {
-  color: red;
+  color: var(--accent-color);
 }
 
 .footer-social {

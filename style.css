@@ -70,13 +70,14 @@
 }
 
 /* Welcome Section */
+
 .welcome-section {
     padding: 80px 0;
     background-color: var(--sectionbg);
 }
 
 .welcome-section h2 {
-    color: var(--text-color2);
+    color: var(--accent-color);
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 30px;
@@ -92,7 +93,53 @@
 }
 
 
+/* Mass Schedule Cards */
+.content-section h2{
+  color: var(--accent-color); 
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
+.sacrament-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.sacrament-card {
+    background-color: var(--sectionbg);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--accent-color);
+}
+
+.sacrament-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.sacrament-card p {
+    margin-bottom: 15px;
+}
+
+.sacrament-card .requirements {
+    margin-top: 20px;
+}
+
+.sacrament-card .requirements h4 {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 /* Message centre */
 
@@ -147,44 +194,3 @@
 }
 
 
-/* Mass Schedule Cards */
-.sacrament-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.sacrament-card {
-    background-color: var(--sectionbg);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    border-left: 5px solid var(--accent-color);
-}
-
-.sacrament-card h3 {
-    color: var(--accent-color);
-    margin-bottom: 15px;
-}
-
-.sacrament-card p {
-    margin-bottom: 15px;
-}
-
-.sacrament-card .requirements {
-    margin-top: 20px;
-}
-
-.sacrament-card .requirements h4 {
-    color: var(--accent-color);
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
-
-h2 {
-    color: var(--accent-color);
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 30px;
-}
