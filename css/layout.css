@@ -29,7 +29,7 @@ header.scrolled a{
 }
 
 .logo a {
-  color: red;
+  color: green;
   text-decoration: none;
   font-size: 22px;
   font-family: 'Times New Roman', Times, serif;
@@ -55,7 +55,7 @@ nav a:hover {
 }
 
 .btn-outline {
-  padding: 10px 20px;
+  padding: 9px 18px;
   border: 2px solid white;
   border-radius: 4px;
   transition: 0.3s;
