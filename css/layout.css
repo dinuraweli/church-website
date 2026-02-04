@@ -29,7 +29,7 @@ header.scrolled a{
 }
 
 .logo a {
-  color: var(--text-color);
+  color: red;
   text-decoration: none;
   font-size: 22px;
   font-family: 'Times New Roman', Times, serif;
@@ -40,14 +40,14 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 nav a:hover {
