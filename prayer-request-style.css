@@ -5,48 +5,6 @@ header {
   background: var(--nav-hero-gradient);
 }
 
-/* Hero Section */
-
-.hero-banner {
-  /*background: url('images/logo.jpg') no-repeat center center/cover;*/
-  background: var(--nav-hero-gradient);
-  height: 30vh;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  padding: 0 20px;
-  /*background: linear-gradient(135deg, #4b0082, #5c5cff);
-  background-image: url('assets/abstract-tech-bg.svg'); /* or PNG
-  background-size: cover;
-  background-position: center;*/
-}
-
-.hero-banner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* Content Section */
 .content-section {
@@ -191,5 +149,28 @@ header {
 .btn-primary:hover {
     background-color: transparent;
     color: var(--white);
+    border-color: var(--white);
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: inline-block;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--white);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color)
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
     border-color: var(--white);
 }

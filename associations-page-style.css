@@ -49,39 +49,6 @@ header {
   margin-right: auto;
 }
 
-.cta-buttons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.btn {
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.btn.primary {
-  background-color: var(--accent-color);
-  color: white;
-}
-
-.btn.primary:hover {
-  background-color: #5d5a5a;
-}
-
-.btn.secondary {
-  background-color: white;
-  color: #111;
-}
-
-.btn.secondary:hover {
-  background-color: #ddd;
-}
-
 /* Content Section */
 .content-section {
     padding: 60px 0;
@@ -115,7 +82,7 @@ header {
     line-height: 1.6;
 }
 
-/* Sacrament Cards */
+/* Association Cards */
 .sacrament-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -195,10 +162,14 @@ h2 {
 .btn-primary {
     background-color: var(--white);
     color: var(--accent-color);
+    border: 1px solid var(--accent-color)
 }
 
 .btn-primary:hover {
-    background-color: transparent;
-    color: var(--white);
+    background-color: var(--accent-color);
+    color: var(--text-color);
     border-color: var(--white);
 }
+
+
+

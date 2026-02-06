@@ -81,40 +81,6 @@ header {
   color: white;
 }
 
-
-/* Tempoary 
-  
-.view-tabs {
-    background: grey;
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.tab-buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.tab-btn.active {
-    background: white;
-    color: red;
-}
-
-.tab-btn {
-    padding: 12px 30px;
-    border: none;
-    border-radius: 10px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
-    background: cyan;
-    color: #374151;
-}*/
-
 /* Calendar */
 
 .view-content {
@@ -323,4 +289,10 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.contact-info i {
+    color: var(--text-color);
+    margin-top: 3px;
+    font-size: 20px;
 }

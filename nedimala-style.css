@@ -43,3 +43,16 @@ header {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.contact-info2 i {
+    color: var(--accent-color);
+    margin-top: 3px;
+}
+
+.contact-info2 p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    opacity: 0.9;
+}

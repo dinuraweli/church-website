@@ -10,7 +10,7 @@ header {
 .hero-banner {
   /*background: url('images/logo.jpg') no-repeat center center/cover;*/
   background: var(--nav-hero-gradient);
-  height: 30vh;
+  height: 25vh;
   color: white;
   display: flex;
   align-items: center;
@@ -82,6 +82,8 @@ header {
     line-height: 1.6;
 }
 
+/* Contact Information */
+
 .info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -130,6 +132,22 @@ header {
     text-decoration: underline;
 }
 
+/* Office Hours */
+
+.time {
+    max-width: 800px; 
+    margin: 0 auto 60px; 
+    text-align: center; 
+    padding: 30px; 
+    background-color: var(--sectionbg); 
+    border-radius: 10px
+}
+
+.time h3{
+    color: var(--primary-color); 
+    margin-bottom: 20px;
+}
+
 /* Form Styles */
 .form-container {
     max-width: 600px;
@@ -138,6 +156,12 @@ header {
     padding: 40px;
     border-radius: 10px;
     box-shadow: var(--shadow);
+}
+
+.form-container h2 {
+    text-align: center; 
+    margin-bottom: 30px; 
+    color: var(--accent-color);
 }
 
 .form-group {
@@ -241,4 +265,14 @@ header {
     background-color: transparent;
     color: var(--white);
     border-color: var(--white);
+}
+
+/* Contact Information */
+
+.contact {
+    max-width: 800px; 
+    margin: 60px auto 0; 
+    padding: 30px; 
+    background-color: var(--sectionbg); 
+    border-radius: 10px;
 }
