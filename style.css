@@ -70,6 +70,15 @@
   background-color: #ddd;
 }
 
+.btn.secondary2 {
+  background-color:var(--accent-color);
+  color: #fffefe;
+}
+
+.btn.secondary2:hover {
+  background-color: #ddd;
+}
+
 /* Welcome Section */
 
 .welcome-section {
