@@ -167,3 +167,47 @@
     }
 }
 
+/* Improve mobile hamburger visibility */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+    
+    header.scrolled .menu-toggle {
+        background: rgba(0, 0, 0, 0.05);
+    }
+    
+    .menu-toggle:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+    
+    header.scrolled .menu-toggle:hover {
+        background: rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Fix for body overflow when menu is open */
+@media screen and (max-width: 768px) {
+    body.menu-open {
+        overflow: hidden;
+    }
+}
+
+/* Ensure dropdown arrows are visible */
+.dropdown > a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown-icon {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}

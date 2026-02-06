@@ -1,3 +1,4 @@
+
 /* Hewro Section */
 .hero-banner {
   background: url('images/1271.jpeg') no-repeat center center/cover;
@@ -72,26 +73,24 @@
 /* Welcome Section */
 
 .welcome-section {
-    padding: 80px 0;
-    background-color: var(--sectionbg);
+  padding: 80px 0;
+  background-color: var(--sectionbg);
 }
 
 .welcome-section h2 {
-    color: var(--accent-color);
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 30px;
+  color: var(--accent-color);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .welcome-section p {
-    max-width: 900px;
-    margin: 0 auto 20px;
-    font-size: 1.1rem;
-    color: var(--text-color2);
-    text-align: center;
-    line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto 20px;
+  color: var(--text-color2);
+  text-align: center;
+  line-height: 1.8;
 }
-
 
 /* Mass Schedule Cards */
 .content-section h2{
@@ -192,5 +191,4 @@ h2 {
     margin-bottom: 20px;
     color: var(--text-color2);
 }
-
 
