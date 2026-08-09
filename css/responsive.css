@@ -143,6 +143,31 @@
   text-align: center;
 }
 
+/* Touch devices have no hover: show dropdown sub-links inline so they're
+   reachable by tap instead of being hidden behind :hover. */
+#navMenu .dropdown-menu {
+  position: static;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  box-shadow: none;
+  min-width: auto;
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+#navMenu .dropdown-menu a {
+  font-size: 0.95rem;
+  padding: 10px 0;
+  color: var(--text-light);
+}
+
+#navMenu .dropdown-icon {
+  display: none; /* the caret implies hover; not needed when expanded inline */
+}
+
 }
 
 @media (max-width: 1200px) {

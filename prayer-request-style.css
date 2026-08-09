@@ -166,7 +166,7 @@ header {
 .btn-primary {
     background-color: var(--white);
     color: var(--accent-color);
-    border: 1px solid var(--accent-color)
+    border: 1px solid var(--accent-color);
 }
 
 .btn-primary:hover {

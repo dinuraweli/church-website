@@ -1,3 +1,10 @@
+// ── CONFIG ──────────────────────────────────────────────────────────────────
+// Replace XXXXXXXX with your own Formspree form ID (https://formspree.io).
+// Create a form, copy its endpoint, and paste it below. Until this is a real
+// endpoint the form will show a friendly error instead of submitting.
+const PRAYER_ENDPOINT = 'https://formspree.io/f/XXXXXXXX';
+// ─────────────────────────────────────────────────────────────────────────────
+
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('prayerRequestForm');
     const anonymousCheckbox = document.getElementById('anonymous');
@@ -36,25 +43,36 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Send to Google Apps Script
+        // Guard against an unconfigured endpoint so we fail loudly in dev
+        if (PRAYER_ENDPOINT.includes('XXXXXXXX')) {
+            console.warn('PRAYER_ENDPOINT is not configured. Set a real Formspree form ID in prayer.js.');
+            alert('The prayer request form is not fully set up yet. Please contact the parish office directly for now.');
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+            return;
+        }
+
+        // Send to Formspree (works on any static host, no backend required)
         try {
-            const response = await fetch('YOUR_GOOGLE_APPS_SCRIPT_URL_HERE', {
+            const response = await fetch(PRAYER_ENDPOINT, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Accept': 'application/json'
                 },
                 body: JSON.stringify(formData)
             });
-            
-            const result = await response.json();
-            
-            if (result.success) {
+
+            // Formspree returns HTTP 200 with { ok: true } on success
+            if (response.ok) {
                 // Show success message
                 showSuccessMessage();
                 form.reset();
                 nameEmailFields.style.display = 'none';
             } else {
-                throw new Error(result.message || 'Submission failed');
+                const result = await response.json().catch(() => ({}));
+                const message = result.errors ? result.errors.map(e => e.message).join(', ') : 'Submission failed';
+                throw new Error(message);
             }
         } catch (error) {
             console.error('Error:', error);

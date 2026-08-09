@@ -128,7 +128,7 @@ h2 {
     margin-top: 60px; 
     text-align: center;
     background: var(--sectionbg);
-    padding: 20px 30px
+    padding: 20px 30px;
 }
 
 /* Buttons */
@@ -145,7 +145,7 @@ h2 {
 .btn-primary {
     background-color: var(--white);
     color: var(--accent-color);
-    border: 1px solid var(--accent-color)
+    border: 1px solid var(--accent-color);
 }
 
 .btn-primary:hover {

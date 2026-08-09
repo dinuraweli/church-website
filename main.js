@@ -22,24 +22,32 @@ window.addEventListener("scroll", () => {
 const menuToggle = document.getElementById('menu-toggle');
 const navMenu = document.getElementById('navMenu');
 
-// Toggle menu on click
-menuToggle.addEventListener('click', (event) => {
-  event.stopPropagation(); // prevent click bubbling to document
-  navMenu.classList.toggle('open');
-});
+// Only wire up the menu if both elements exist (guards against pages without a nav)
+if (menuToggle && navMenu) {
+  // Toggle menu on click
+  menuToggle.addEventListener('click', (event) => {
+    event.stopPropagation(); // prevent click bubbling to document
+    navMenu.classList.toggle('open');
+  });
 
-// Close when clicking outside
-document.addEventListener('click', (event) => {
-  if (navMenu.classList.contains('open') && !navMenu.contains(event.target) && event.target !== menuToggle) {
-    navMenu.classList.remove('open');
-  }
-});
+  // Close when clicking outside
+  document.addEventListener('click', (event) => {
+    if (navMenu.classList.contains('open') && !navMenu.contains(event.target) && event.target !== menuToggle) {
+      navMenu.classList.remove('open');
+    }
+  });
 
-// Optional: Close with Escape key
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && navMenu.classList.contains('open')) {
-    navMenu.classList.remove('open');
-  }
+  // Optional: Close with Escape key
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && navMenu.classList.contains('open')) {
+      navMenu.classList.remove('open');
+    }
+  });
+}
+
+// ✅ Auto-update footer year(s)
+document.querySelectorAll('#currentYear').forEach(el => {
+  el.textContent = new Date().getFullYear();
 });
 
 

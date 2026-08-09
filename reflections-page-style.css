@@ -15,7 +15,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.916), rgba(0, 0, 0, 0.432))
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.916), rgba(0, 0, 0, 0.432));
 }
 
 .hero-content {
