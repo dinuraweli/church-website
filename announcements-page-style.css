@@ -85,7 +85,7 @@ header {
 
 .view-content {
   margin: 0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--font-body);
   background: 
     linear-gradient(
       rgba(255, 255, 255, 0.88),
@@ -215,16 +215,16 @@ header {
 
 .side-panel h3 {
   margin-top: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: var(--font-heading);
   line-height: 22px;
 }
 
 .side-panel h4 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: var(--font-heading);
 }
 
 .side-panel p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: var(--font-body);
 }
 
 .logo2 {
@@ -257,7 +257,7 @@ header {
 }
 
 .day.today {
-  border: 2px solid #0b5fa5;
+  border: 2px solid var(--accent-color);
   background: #eef6ff;
 }
 
@@ -268,22 +268,57 @@ header {
 }
 
 
-@media (max-width: 600px) {
-  .calendar {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .day-name {
-    display: none;
-  }
-  .weekdays{
-    color: #33333300;
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;   /* stack the side panel below the calendar */
   }
 }
 
-@media (max-width: 900px) {
-  .content {
-    grid-template-columns: 1fr;
+@media (max-width: 600px) {
+  /* Keep the real 7-day calendar, just compact it so it fits a phone.
+     Event chips are hidden; tapping a day opens the full-details modal. */
+  .calendar {
+    gap: 4px;
+  }
+  .weekdays {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    font-size: 0.7rem;
+  }
+  .day {
+    padding: 4px;
+    min-height: 46px;
+    border-radius: 8px;
+  }
+  .date {
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+    text-align: center;
+  }
+  .event {
+    display: none;
+  }
+  /* mark days that have events with a small dot */
+  .day:has(.event) {
+    position: relative;
+  }
+  .day:has(.event)::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent-color);
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-month-label {
+    min-width: auto;
+    font-size: 1.1rem;
   }
 }
 

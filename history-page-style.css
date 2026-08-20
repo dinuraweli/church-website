@@ -132,7 +132,7 @@ header {
 /* timeline section */
 
 .body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--font-body);
   background-color: var(--sectionbg);
   margin: 0;
   padding: 20px;

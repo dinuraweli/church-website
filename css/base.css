@@ -28,7 +28,7 @@ select:focus-visible {
   /* Primary brand colour (alias of accent) + a lighter secondary */
   --primary-color: rgb(0, 79, 176);
   --primary-dark: rgb(0, 58, 130);
-  --secondary-color: rgb(197, 154, 74); /* warm gold accent for highlights */
+  --secondary-color: rgb(0, 79, 176); /* on-brand blue (was an off-brand gold) */
   --bg-colour: #efe2b400;
   --bg-colour2: floralwhite;
   --sectionbg: #f9f9f9;

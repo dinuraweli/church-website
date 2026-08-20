@@ -112,7 +112,7 @@ header {
 }
 
 .btn-submit:hover {
-    background-color:darkslategray;
+    background-color: var(--primary-dark);
 }
 
 .btn-reset {

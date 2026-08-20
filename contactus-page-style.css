@@ -10,7 +10,7 @@ header {
 .hero-banner {
   /*background: url('images/logo.jpg') no-repeat center center/cover;*/
   background: var(--nav-hero-gradient);
-  height: 25vh;
+  height: 30vh;
   color: white;
   display: flex;
   align-items: center;
@@ -227,7 +227,7 @@ header {
 }
 
 .btn-submit:hover {
-    background-color:darkslategray;
+    background-color: var(--primary-dark);
 }
 
 .btn-reset {

@@ -45,8 +45,8 @@
 }
 
 .btn {
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 12px 30px;
+  border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
   transition: 0.3s ease;
@@ -58,7 +58,7 @@
 }
 
 .btn.primary:hover {
-  background-color: #5d5a5a;
+  background-color: var(--primary-dark);
 }
 
 .btn.secondary {

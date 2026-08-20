@@ -10,7 +10,7 @@ header {
 .hero-banner {
   /*background: url('images/logo.jpg') no-repeat center center/cover;*/
   background: var(--nav-hero-gradient);
-  height: 45vh;
+  height: 30vh;
   color: white;
   display: flex;
   align-items: center;
@@ -99,7 +99,7 @@ i {
 }
 
 i:hover {
-  color: #0077b6;
+  color: var(--accent-color);
   transform: scale(1.1);
 }
 
